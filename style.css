@@ -2,7 +2,7 @@
    ABOUT / BIO SECTION
 ========================= */
 .about-section {
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 .about-section p,
 .about-section ul {
@@ -33,7 +33,7 @@
    BIO SPACING
 ========================= */
 .bio {
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 /* =========================
@@ -91,79 +91,4 @@
     font-size: 1rem;
   }
   
-  /* Section accent / results */
-  .section-accent h2 {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin-bottom: 15px;
-  }
-  .section-accent p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-  
-  /* About / bio - mobile padding */
-  .about-section {
-    padding: 30px 15px;
-  }
-  .about-section h2 {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-  .about-section p {
-    font-size: 1rem;
-    margin-bottom: 12px;
-  }
-  .about-section ul li {
-    font-size: 1rem;
-  }
-  
-  .bio {
-    padding: 30px 15px;
-  }
-  
-  /* Testimonial - mobile */
-  .testimonial {
-    padding: 40px 20px;
-    margin: 40px 15px;
-  }
-  
-  .testimonial-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .testimonial-author {
-    font-size: 1rem;
-  }
-  
-  /* Testimonial photos – mobile layout */
-  .testimonial-photos {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 10px !important;
-    margin-top: 20px;
-  }
-  
-  /* First two side-by-side */
-  .testimonial-photos img:nth-child(1),
-  .testimonial-photos img:nth-child(2) {
-    grid-column: span 1 !important;
-  }
-  
-  /* Last two stacked (each takes full width) */
-  .testimonial-photos img:nth-child(3),
-  .testimonial-photos img:nth-child(4) {
-    grid-column: 1 / -1 !important;
-  }
-  
-  .testimonial-photos img {
-    width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 3px solid #DAA520;
-  }
-}
+  /* Section accent / results */​​​​​​​​​​​​​​​​
