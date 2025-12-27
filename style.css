@@ -70,3 +70,44 @@
         grid-column: span 2;
     }
 }
+ /* TESTIMONIAL PHOTOS – DESKTOP */
+.testimonial-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial-photos img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* MOBILE: clearer transformation layout */
+@media (max-width: 768px) {
+  .testimonial-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  /* First two side-by-side */
+  .testimonial-photos img:nth-child(1),
+  .testimonial-photos img:nth-child(2) {
+    grid-column: span 1;
+  }
+
+  /* Last two stacked full-width */
+  .testimonial-photos img:nth-child(3),
+  .testimonial-photos img:nth-child(4) {
+    grid-column: span 2;
+  }
+
+  .testimonial-photos img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
