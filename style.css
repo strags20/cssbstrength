@@ -1,76 +1,47 @@
+/* =========================
+   ABOUT / BIO SECTION
+========================= */
+
 .about-section p,
 .about-section ul {
-    margin-bottom: 20px; /* adds space after each paragraph and list */
+  margin-bottom: 20px;
 }
+
+.about-section ul li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero-title {
-    font-size:3rem;         /* both lines almost same size */
-    font-weight:900;
-    line-height:1.1;        /* tight line spacing so lines touch */
-    margin-bottom:15px;     /* space before smaller text */
-    text-transform:uppercase;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .hero-text {
-    font-size:1.2rem;
-    font-weight:400;
-    margin-top:0;           /* already have margin-bottom on title */
-    margin-bottom:30px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
-/* Mobile adjustments */
-@media (max-width:768px) {
-    .hero-title {
-        font-size:2rem;
-        line-height:1.1;   /* still tight */
-    }
-    .hero-text {
-        font-size:1rem;
-    }
-}
-@media (max-width:768px){
-    /* Survey / Results heading */
-    .section-accent h2 {
-        font-size: 1.8rem;
-        line-height: 1.2;
-        margin-bottom: 15px;
-    }
-    .section-accent p {
-        font-size: 1rem;
-        margin-bottom: 15px;
-    }
+/* =========================
+   BIO SPACING
+========================= */
 
-    /* Bio section heading and text */
-    .about-section h2 {
-        font-size: 1.8rem;
-        line-height: 1.2;
-        margin-bottom: 10px;
-    }
-    .about-section p {
-        font-size: 1rem;
-        margin-bottom: 12px;
-    }
-    .about-section ul li {
-        font-size: 1rem;
-        margin-bottom: 8px;
-    }
-}
-/* Existing media queries */
-@media (max-width: 768px) {
-    /* your other mobile styles */
+.bio {
+  padding: 40px 0;
 }
 
-/* Testimonial image adjustments for mobile */
-@media (max-width: 768px) {
-    .testimonial-photos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-    .testimonial-photos img:nth-child(n+3) {
-        grid-column: span 2;
-    }
-}
- /* TESTIMONIAL PHOTOS – DESKTOP */
+/* =========================
+   TESTIMONIAL PHOTOS – DESKTOP
+========================= */
+
 .testimonial-photos {
   display: flex;
   flex-wrap: wrap;
@@ -85,8 +56,51 @@
   border-radius: 8px;
 }
 
-/* MOBILE: clearer transformation layout */
+/* =========================
+   MOBILE STYLES
+========================= */
+
 @media (max-width: 768px) {
+
+  /* Hero */
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  /* Section accent / results */
+  .section-accent h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .section-accent p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  /* About / bio */
+  .about-section h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .about-section ul li {
+    font-size: 1rem;
+  }
+
+  /* Testimonial photos – mobile layout */
   .testimonial-photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -99,7 +113,7 @@
     grid-column: span 1;
   }
 
-  /* Last two stacked full-width */
+  /* Last two stacked */
   .testimonial-photos img:nth-child(3),
   .testimonial-photos img:nth-child(4) {
     grid-column: span 2;
@@ -110,6 +124,4 @@
     height: auto;
     aspect-ratio: 1 / 1;
   }
-.bio {
-  padding: 32px 0;
 }
