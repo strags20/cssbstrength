@@ -27,3 +27,30 @@
         font-size:1rem;
     }
 }
+@media (max-width:768px){
+    /* Survey / Results heading */
+    .section-accent h2 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    .section-accent p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    /* Bio section heading and text */
+    .about-section h2 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .about-section p {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+    .about-section ul li {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+}
