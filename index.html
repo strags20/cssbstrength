@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Sports Bra Strength</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sports Bra Strength</title>
+<link rel="stylesheet" href="./style.css">
 <style>
 /* Reset & Base */
 * {margin:0; padding:0; box-sizing:border-box;}
@@ -36,7 +27,7 @@ a {text-decoration:none;}
 .cta-button:hover {background:#1e3a5f; color:white;}
 
 /* Sections */
-.section {padding:80px 20px; max-width:1200px; margin:0 auto;}
+.section {padding:20px 20px; max-width:1200px; margin:0 auto;}
 h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:uppercase; letter-spacing:-0.5px; text-align:center;}
 .section-dark {background:#1a1a1a; color:white;}
 .section-dark h2 {color:#DAA520;}
@@ -94,8 +85,10 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     .hero-title {font-size:2.2rem; line-height:2.5rem; margin-bottom:10px;}
     .hero-subtitle {font-size:1rem; line-height:1.3rem; margin-bottom:20px;}
     .hero-content {max-width:100%;}
+    .section {padding:15px 15px;}
     .about-section {grid-template-columns:1fr;}
-    .testimonial-photos {grid-template-columns:repeat(auto-fit,minmax(140px,1fr));}
+    .testimonial-photos {display:grid !important; grid-template-columns:1fr 1fr !important; gap:10px !important;}
+    .testimonial-photos img {grid-column:span 1 !important; width:100% !important; height:auto !important;}
     .quote-card p {font-size:1rem;}
 }
 </style>
@@ -106,21 +99,17 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 <section class="hero">
     <div class="hero-content">
         <h1 class="hero-title">
-           
            Get Strong Like Your Favorite Female Athletes
         </h1>
-        <p class="hero-text">Join Sports Bra Strength, a lifting club created exclusively for  women's sports fans</p>
+        <p class="hero-text">Join Sports Bra Strength, a lifting club created exclusively for women's sports fans</p>
         <a href="#pricing" class="cta-button">Join the Club</a>
     </div>
 </section>
 
-
-
-
 <!-- SURVEY / RESULTS -->
 <section class="section section-accent">
     <h2>If You Want to Get Stronger,<br>Not Smaller, This Is For You</h2>
-    <p style="font-size:1.2rem; max-width:800px; margin:20px auto;">When I asked women’s sports fans what they wanted from strength training, here’s what they said:</p>
+    <p style="font-size:1.2rem; max-width:800px; margin:20px auto;">When I asked women's sports fans what they wanted from strength training, here's what they said:</p>
     <div class="quote-grid">
         <div class="quote-card"><p>"Jackie Young type arms and Kiah Stokes type abs"</p></div>
         <div class="quote-card"><p>"I want to hit 110+ bench this year!"</p></div>
@@ -130,7 +119,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     </div>
 </section>
 
-  <!-- TESTIMONIAL -->
+<!-- TESTIMONIAL -->
 <div class="testimonial">
     <p class="testimonial-text">"I needed to rebuild and my vision was Skylar's Quads and Gabby's arms. Within 6 months, Christen transformed me and set me on that path! Results? Hail YES!"</p>
     <p class="testimonial-author">— Karolyn Y.</p>
@@ -158,11 +147,11 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
                 <li>Kayla McBride</li>
                 <li>Becky Hammon</li>
             </ul>
-            <p>I know exactly what goes into their strength and it’s more doable than you think.</p>
+            <p>I know exactly what goes into their strength and it's more doable than you think.</p>
             <p>Most of the fitness industry sells you smaller. But athletes train to become more: stronger, faster, more confident, and more powerful.</p>
-            <p>That’s what I want women’s sports fans to have access to.</p>
+            <p>That's what I want women's sports fans to have access to.</p>
             <p>Training inspired by the athletes you love, made for your real schedule. No gimmicks. No weight-loss pressure. Just getting stronger.</p>
-            <p>If you love women’s sports and want the athlete version of yourself, this is your spot.</p>
+            <p>If you love women's sports and want the athlete version of yourself, this is your spot.</p>
         </div>
     </div>
 </section>
@@ -176,7 +165,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
         <div class="quote-card"><h3>Private Community</h3><p>Connect with women who want to get strong like their favorite female athletes. Share wins and stay accountable.</p></div>
         <div class="quote-card"><h3>Monthly Coaching Support</h3><p>Receive coaching guidance, bonus content, and themes to keep your results accelerating.</p></div>
         <div class="quote-card"><h3>No More Guesswork</h3><p>Stop wondering what to do in the gym and follow a program designed for real strength gains.</p></div>
-        <div class="quote-card"><h3>Flexible Scheduling</h3><p>30-45 min adaptable workouts for your busy life - no unrealistic “athlete” schedule required.</p></div>
+        <div class="quote-card"><h3>Flexible Scheduling</h3><p>30-45 min adaptable workouts for your busy life - no unrealistic "athlete" schedule required.</p></div>
     </div>
 </section>
 
@@ -228,7 +217,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
         </div>
         <div class="faq-item">
             <h3>Do I need a gym?</h3>
-            <p>Nope! There are both gym and dumbbell-only workouts included. You’ll need at least one lighter and one heavier set of dumbbells to get the most out of the program.</p>
+            <p>Nope! There are both gym and dumbbell-only workouts included. You'll need at least one lighter and one heavier set of dumbbells to get the most out of the program.</p>
         </div>
         <div class="faq-item">
             <h3>Can I pay monthly?</h3>
@@ -236,7 +225,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
         </div>
         <div class="faq-item">
             <h3>How long until I see results?</h3>
-            <p>You’ll feel stronger within 2-3 weeks. Visible changes typically appear around week 8-12.</p>
+            <p>You'll feel stronger within 2-3 weeks. Visible changes typically appear around week 8-12.</p>
         </div>
         <div class="faq-item">
             <h3>What if I have restrictions?</h3>
@@ -248,13 +237,9 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 <!-- FINAL CTA -->
 <section class="footer-cta">
     <h2>Let's Build Some Serious Strength in 2026</h2>
-    <p>Sports Bra Strength starts January 5th - don’t miss your chance to get strong like your favorite female athletes.</p>
+    <p>Sports Bra Strength starts January 5th - don't miss your chance to get strong like your favorite female athletes.</p>
     <a href="#pricing">Join The Club</a>
 </section>
 
 </body>
-</html>
-    
-  </body>
-  
 </html>
