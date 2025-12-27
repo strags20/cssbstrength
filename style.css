@@ -54,3 +54,19 @@
         margin-bottom: 8px;
     }
 }
+/* Existing media queries */
+@media (max-width: 768px) {
+    /* your other mobile styles */
+}
+
+/* Testimonial image adjustments for mobile */
+@media (max-width: 768px) {
+    .testimonial-photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .testimonial-photos img:nth-child(n+3) {
+        grid-column: span 2;
+    }
+}
