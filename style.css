@@ -110,4 +110,6 @@
     height: auto;
     aspect-ratio: 1 / 1;
   }
+.bio {
+  padding: 32px 0;
 }
