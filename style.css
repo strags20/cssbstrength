@@ -1,12 +1,13 @@
 /* =========================
    ABOUT / BIO SECTION
 ========================= */
-
+.about-section {
+  padding: 40px 20px; /* Added horizontal padding */
+}
 .about-section p,
 .about-section ul {
   margin-bottom: 20px;
 }
-
 .about-section ul li {
   margin-bottom: 8px;
 }
@@ -14,7 +15,6 @@
 /* =========================
    HERO SECTION
 ========================= */
-
 .hero-title {
   font-size: 3rem;
   font-weight: 900;
@@ -22,7 +22,6 @@
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-
 .hero-text {
   font-size: 1.2rem;
   font-weight: 400;
@@ -33,22 +32,19 @@
 /* =========================
    BIO SPACING
 ========================= */
-
 .bio {
-  padding: 40px 0;
+  padding: 40px 20px; /* Added horizontal padding */
 }
 
 /* =========================
    TESTIMONIAL PHOTOS – DESKTOP
 ========================= */
-
 .testimonial-photos {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
-
 .testimonial-photos img {
   width: 220px;
   height: 220px;
@@ -59,69 +55,73 @@
 /* =========================
    MOBILE STYLES
 ========================= */
-
 @media (max-width: 768px) {
-
   /* Hero */
   .hero-title {
     font-size: 2rem;
     line-height: 1.1;
   }
-
   .hero-text {
     font-size: 1rem;
   }
-
+  
   /* Section accent / results */
   .section-accent h2 {
     font-size: 1.8rem;
     line-height: 1.2;
     margin-bottom: 15px;
   }
-
   .section-accent p {
     font-size: 1rem;
     margin-bottom: 15px;
   }
-
-  /* About / bio */
+  
+  /* About / bio - mobile padding */
+  .about-section {
+    padding: 30px 15px; /* Adjusted for mobile */
+  }
   .about-section h2 {
     font-size: 1.8rem;
     line-height: 1.2;
     margin-bottom: 10px;
   }
-
   .about-section p {
     font-size: 1rem;
     margin-bottom: 12px;
   }
-
   .about-section ul li {
     font-size: 1rem;
   }
-
+  
+  .bio {
+    padding: 30px 15px; /* Adjusted for mobile */
+  }
+  
   /* Testimonial photos – mobile layout */
   .testimonial-photos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr; /* Simplified - two equal columns */
     gap: 15px;
+    padding: 0 15px; /* Added padding to container */
   }
-
+  
   /* First two side-by-side */
   .testimonial-photos img:nth-child(1),
   .testimonial-photos img:nth-child(2) {
     grid-column: span 1;
   }
-
-  /* Last two stacked */
+  
+  /* Last two stacked (each takes full width) */
   .testimonial-photos img:nth-child(3),
   .testimonial-photos img:nth-child(4) {
-    grid-column: span 2;
+    grid-column: 1 / -1; /* Span from first to last column */
   }
-
+  
   .testimonial-photos img {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
+    object-fit: cover; /* Ensure images don't distort */
+    border-radius: 8px;
   }
 }
