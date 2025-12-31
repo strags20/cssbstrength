@@ -6,27 +6,25 @@
 <title>Sports Bra Strength</title>
 
 <!-- Open Graph / Twitter -->
-<meta property="og:image" content="https://strags20.github.io/cssbstrength/Sports%20Bra%20Strength%20Logo.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:title" content="Sports Bra Strength">
-<meta property="og:description" content="A lifting club for women's sports fans">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://strags20.github.io/cssbstrength/Sports%20Bra%20Strength%20Logo.png">
+<meta property="og:image" content="https://strags20.github.io/cssbstrength/Sports Bra Strength Logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:title" content="Sports Bra Strength" />
+<meta property="og:description" content="A lifting club for women's sports fans" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://strags20.github.io/cssbstrength/Sports Bra Strength Logo.png" />
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP5S0KCR9F"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JP5S0KCR9F');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-JP5S0KCR9F');
 </script>
 
 <style>
-/* =========================
-   RESET & BASE
-========================= */
+/* Reset & Base */
 * {margin:0; padding:0; box-sizing:border-box;}
 body {font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; line-height:1.6; color:#1a1a1a; background:#fff;}
 a {text-decoration:none;}
@@ -34,43 +32,36 @@ a {text-decoration:none;}
 /* =========================
    ALERT BAR
 ========================= */
-.alert-bar {background:linear-gradient(90deg,#ff4b2b,#ff416c); color:white; text-align:center; font-weight:700; padding:10px; font-size:1rem;}
-.alert-bar a {color:white; text-decoration:underline; font-weight:900;}
+.alert-bar {background:#DAA520; color:#1a1a1a; text-align:center; padding:12px 20px; font-weight:700;}
+.alert-bar a {color:#1a1a1a; font-weight:bold; text-decoration:underline;}
 
 /* =========================
    HERO
 ========================= */
-.hero {
-  background: linear-gradient(135deg, #800020 0%, #1e3a5f 100%);
-  color: white;
-  text-align:center;
-  padding:100px 20px 80px 20px;
-  position:relative;
-}
+.hero {background: linear-gradient(135deg, #800020 0%, #1e3a5f 100%); color:white; text-align:center; padding:100px 20px;}
 .hero-title {font-size:3rem; font-weight:900; margin-bottom:20px; text-transform:uppercase; line-height:1.2;}
 .hero-subtitle {font-size:1.5rem; margin-bottom:30px; line-height:1.5;}
-.cta-button {display:inline-block; background:#DAA520; color:#1a1a1a; padding:18px 40px; font-weight:700; border-radius:4px; text-transform:uppercase; transition:all 0.3s; margin-top:10px;}
+.cta-button {display:inline-block; background:#DAA520; color:#1a1a1a; padding:18px 40px; font-weight:700; border-radius:4px; text-transform:uppercase; transition:all 0.3s;}
 .cta-button:hover {background:#1e3a5f; color:white;}
 
 /* =========================
    COUNTDOWN TIMER
 ========================= */
-.countdown {text-align:center; background:#f5f5f5; padding:15px 20px; font-weight:700; font-size:1.2rem; color:#800020;}
+#countdown {background:#800020; color:white; text-align:center; font-weight:700; padding:15px 20px; margin-bottom:0;}
+#countdown span {margin:0 10px; font-size:1.2rem;}
 
 /* =========================
    SECTIONS
 ========================= */
-.section {padding:50px 20px; max-width:1200px; margin:0 auto;}
-h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:uppercase; letter-spacing:-0.5px; text-align:center;}
+.section {padding:40px 20px; max-width:1200px; margin:0 auto;}
+h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:uppercase; letter-spacing:-0.5px; text-align:center; line-height:1.2;}
 .section-accent {background:#f5f5f5;}
 .section-dark {background:#1a1a1a; color:white;}
 .section-dark h2 {color:#DAA520;}
-
-/* Quote grid */
 .quote-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; margin-top:40px;}
 .quote-card {background:white; padding:30px; border-left:4px solid #800020; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
 .quote-card p {font-style:italic; font-size:1.2rem; line-height:1.6; color:#333;}
-.section-dark .quote-card {background:#2a2a2a; color:white; font-size:1.2rem;}
+.section-dark .quote-card {background:#2a2a2a; color:white;}
 .section-dark .quote-card h3 {font-size:1.5rem; margin-bottom:10px; color:#DAA520; text-transform:uppercase;}
 .section-dark .quote-card p {color:white;}
 
@@ -114,7 +105,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 .faq-item h3 {color:#800020; margin-bottom:15px; font-size:1.3rem;}
 
 /* =========================
-   FOOTER CTA
+   FINAL CTA
 ========================= */
 .footer-cta {background:linear-gradient(135deg,#800020 0%,#1e3a5f 100%); color:white; text-align:center; padding:80px 20px;}
 .footer-cta h2 {font-size:3rem; margin-bottom:20px;}
@@ -125,106 +116,121 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 /* =========================
    MOBILE
 ========================= */
-@media (max-width:768px){
-  .hero-title{font-size:2.2rem; line-height:2.5rem; margin-bottom:10px;}
-  .hero-subtitle{font-size:1rem; line-height:1.4rem; margin-bottom:20px;}
-  .about-section{grid-template-columns:1fr;}
-  .testimonial-photos{display:grid !important; grid-template-columns:1fr 1fr !important; gap:10px !important;}
-  .testimonial-photos img{width:100% !important;height:auto !important;}
-  .quote-card p{font-size:1rem;}
+@media (max-width: 768px) {
+.hero-title {font-size:2.2rem;}
+.hero-subtitle {font-size:1.1rem; line-height:1.4;}
+.about-section {grid-template-columns:1fr;}
+.testimonial-photos {display:grid !important; grid-template-columns:1fr 1fr !important; gap:10px !important;}
+.testimonial-photos img {width:100% !important; height:auto !important;}
+.quote-card p {font-size:1rem;}
+.section {padding:20px;}
 }
 </style>
-</head>
 
+<script>
+// Countdown Timer
+const countdownDate = new Date("Jan 5, 2026 23:59:00").getTime();
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+    if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "Founding pricing ended!";
+        return;
+    }
+    const days = Math.floor(distance/(1000*60*60*24));
+    const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+    const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+    const seconds = Math.floor((distance%(1000*60))/1000);
+    document.getElementById("countdown").innerHTML = `
+        ⚠️ Founding Member Pricing Ends Jan 5th | ${days}d ${hours}h ${minutes}m ${seconds}s left | <a href="#pricing">Lock in $149/quarter ↓</a>
+    `;
+}
+setInterval(updateCountdown,1000);
+</script>
+
+</head>
 <body>
 
-<!-- ALERT BAR -->
-<div class="alert-bar">
-⚠️ Founding Member Pricing Ends January 5th | Lock in $149/quarter forever. After Jan 5, new members pay $179. <a href="#pricing">Join Now ↓</a>
-</div>
-
-<!-- COUNTDOWN TIMER -->
-<div class="countdown" id="countdown"></div>
+<!-- ALERT BAR + COUNTDOWN -->
+<div id="countdown"></div>
 
 <!-- HERO -->
 <section class="hero">
-  <h1 class="hero-title">Get Strong Like Your Favorite Female Athletes</h1>
-  <p class="hero-subtitle">The only strength program for women's sports fans built by a former WNBA strength coach.<br>
-  I'm Christen Strags and I trained WNBA All-Stars and Olympians. Now I'm training you.</p>
-  <a href="#pricing" class="cta-button">Lock in Founding Pricing ↓</a>
+<h1 class="hero-title">Get Strong Like Your Favorite Female Athletes</h1>
+<p class="hero-subtitle">The only strength program for women’s sports fans built by a former WNBA strength coach.<br>I'm Christen Strags and I trained WNBA All-Stars and Olympians, now I’m training you.</p>
+<a href="#pricing" class="cta-button">Lock in Founding Pricing ↓</a>
 </section>
 
 <!-- SECTION 2: WHAT WOMEN WANT -->
 <section class="section section-accent">
 <h2>If You Want to Get Stronger, Not Smaller, This Is For You</h2>
-<p style="text-align:center; max-width:800px; margin:20px auto; font-size:1.2rem;">When I asked women's sports fans what they wanted from strength training, here's what they said:</p>
 <div class="quote-grid">
-  <div class="quote-card"><p>"Jackie Young type arms and Kiah Stokes type abs"</p></div>
-  <div class="quote-card"><p>"I want to hit 110+ bench this year!"</p></div>
-  <div class="quote-card"><p>"Chasing those Tash Cloud delts!"</p></div>
-  <div class="quote-card"><p>"Get SHREDDED"</p></div>
+<div class="quote-card"><p>"Jackie Young type arms and Kiah Stokes type abs"</p></div>
+<div class="quote-card"><p>"I want to hit 110+ bench this year!"</p></div>
+<div class="quote-card"><p>"Chasing those Tash Cloud delts!"</p></div>
+<div class="quote-card"><p>"Get SHREDDED"</p></div>
 </div>
 </section>
 
 <!-- SECTION 3: SOCIAL PROOF -->
-<section class="section">
-<h2>Real Results From Women's Sports Fans</h2>
 <div class="testimonial">
-  <p class="testimonial-text">"I needed to rebuild and my vision was Skylar's Quads and Gabby's arms. Within 6 months, Christen transformed me and set me on that path! Results? Hail YES!"</p>
-  <p class="testimonial-author">— Karolyn Y.</p>
-  <div class="testimonial-photos">
-    <img src="https://i.imgur.com/fCDuzns.jpeg" alt="Karolyn Transformation 1">
-    <img src="https://i.imgur.com/gIoE8Bb.jpeg" alt="Karolyn Transformation 2">
-    <img src="https://i.imgur.com/MG5GdIl.png" alt="Karolyn Transformation 3">
-    <img src="https://i.imgur.com/9WIquQU.jpeg" alt="Karolyn Transformation 4">
-  </div>
+<p class="testimonial-text">"I needed to rebuild and my vision was Skylar's Quads and Gabby's arms. Within 6 months, Christen transformed me and set me on that path! Results? Hail YES!"</p>
+<p class="testimonial-author">— Karolyn Y.</p>
+<div class="testimonial-photos">
+<img src="https://i.imgur.com/fCDuzns.jpeg" alt="Karolyn Transformation 1">
+<img src="https://i.imgur.com/gIoE8Bb.jpeg" alt="Karolyn Transformation 2">
+<img src="https://i.imgur.com/MG5GdIl.png" alt="Karolyn Transformation 3">
+<img src="https://i.imgur.com/9WIquQU.jpeg" alt="Karolyn Transformation 4">
 </div>
-</section>
+</div>
 
 <!-- SECTION 4: WHAT YOU GET -->
 <section class="section section-dark">
 <h2>What You Get</h2>
 <div class="quote-grid">
-  <div class="quote-card"><h3>12-Week Strength Program</h3><p>Build visible muscle with progressive overload, compound lifts, and targeted results for the physique you want.</p></div>
-  <div class="quote-card"><h3>Training App with Direct Access to Me</h3><p>Video demos, workout tracking, PLUS message me anytime for questions and form check videos.</p></div>
-  <div class="quote-card"><h3>Private Community</h3><p>Connect with women who want to get strong like their favorite female athletes. Share wins and stay accountable.</p></div>
-  <div class="quote-card"><h3>Monthly Coaching Support</h3><p>Receive coaching guidance, bonus content, and themes to keep your results accelerating.</p></div>
-  <div class="quote-card"><h3>New 12-Week Cycles Every Quarter</h3><p>The program evolves. If you go annual, you get fresh programming every 3 months.</p></div>
-  <div class="quote-card"><h3>I'll Help You Start Where You Are</h3><p>Whether you've been lifting consistently or you're getting back into it, the program meets you at your level. You don't need to be "ready." You just need to start.</p></div>
+<div class="quote-card"><h3>12-Week Strength Program</h3><p>Build visible muscle with progressive overload, compound lifts, and targeted results for the physique you want.</p></div>
+<div class="quote-card"><h3>Training App with Direct Access to Me</h3><p>Video demos, workout tracking, PLUS message me anytime for questions and form check videos.</p></div>
+<div class="quote-card"><h3>Private Community</h3><p>Connect with women who want to get strong like their favorite female athletes. Share wins and stay accountable.</p></div>
+<div class="quote-card"><h3>Monthly Coaching Support</h3><p>Receive coaching guidance, bonus content, and themes to keep your results accelerating.</p></div>
+<div class="quote-card"><h3>New 12-Week Cycles Every Quarter</h3><p>The program evolves. If you go annual, you get fresh programming every 3 months.</p></div>
+<div class="quote-card"><h3>I'll Help You Start Where You Are</h3><p>Whether you've been lifting consistently or you're getting back into it, the program meets you at your level. You don't need to be "ready." You just need to start.</p></div>
 </div>
 </section>
 
 <!-- SECTION 5: PRICING -->
 <section class="section" id="pricing">
 <h2>Join Sports Bra Strength</h2>
-<p style="text-align:center; font-size:1.2rem; margin-bottom:20px;">Founding Member Pricing Ends January 5th. Program starts January 5th, right in time for Unrivaled Season.</p>
+<p style="text-align:center; font-size:1.2rem; margin-bottom:20px;">Program starts January 5th, right in time for Unrivaled Season. Founding Member Pricing Ends January 5th.</p>
 <div class="pricing-grid">
-  <div class="pricing-card">
-    <h3>Quarterly - Founding Rate</h3>
-    <div class="price">$149<span class="price-period">/3 months</span></div>
-    <ul class="features-list">
-      <li>12-week strength program</li>
-      <li>Training app with direct messaging</li>
-      <li>Private community</li>
-      <li>Monthly support & content</li>
-      <li>Renews every 3 months at $149 (new members pay $179)</li>
-    </ul>
-    <a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T" class="stripe-btn" data-plan="quarterly">Join Quarterly - Lock in $149 Forever</a>
-  </div>
 
-  <div class="pricing-card" style="border-color:#DAA520; border-width:4px;">
-    <div style="background:#DAA520; color:#1a1a1a; padding:10px; margin:-40px -40px 20px; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Best Value</div>
-    <h3>Annual - Founding Rate</h3>
-    <div class="price">$499<span class="price-period">/year</span></div>
-    <ul class="features-list">
-      <li>Full year of programming (new cycles every quarter)</li>
-      <li>Training app with direct messaging</li>
-      <li>Private community</li>
-      <li>Monthly support & content</li>
-      <li>New members will pay $549 after Jan 5</li>
-    </ul>
-    <a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U" class="stripe-btn" data-plan="annual">Join Annual - Save $97 + Lock in Founding Rate</a>
-  </div>
+<div class="pricing-card">
+<h3>Quarterly - Founding Rate</h3>
+<div class="price">$149<span class="price-period">/3 months</span></div>
+<ul class="features-list">
+<li>12-week strength program</li>
+<li>Training app with direct messaging</li>
+<li>Private community</li>
+<li>Monthly support & content</li>
+<li>Renews every 3 months at $149 (new members will pay $179)</li>
+</ul>
+<a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T" onclick="gtag('event','click_quarterly',{event_category:'conversion'});">Join Quarterly - Lock in $149 Forever</a>
+</div>
+
+<div class="pricing-card" style="border-color:#DAA520; border-width:4px;">
+<div style="background:#DAA520; color:#1a1a1a; padding:10px; margin:-40px -40px 20px; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Best Value</div>
+<h3>Annual - Founding Rate</h3>
+<div class="price">$499<span class="price-period">/year</span></div>
+<p style="color:#800020; font-weight:700; margin-bottom:20px;">Save $97 + lock in founding rate forever</p>
+<ul class="features-list">
+<li>Full year of programming (new cycles every quarter)</li>
+<li>Training app with direct messaging</li>
+<li>Private community</li>
+<li>Monthly support & content</li>
+<li>New members will pay $549 after Jan 5</li>
+</ul>
+<a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U" onclick="gtag('event','click_annual',{event_category:'conversion'});">Join Annual - Save $97 + Lock in Founding Rate</a>
+</div>
+
 </div>
 </section>
 
@@ -232,49 +238,38 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 <section class="section section-accent">
 <h2>Why I Built This</h2>
 <div class="about-section">
-  <div>
-    <img src="https://i.imgur.com/y4j3SnV.png" alt="Christen Strags" class="about-image">
-  </div>
-  <div>
-    <p>Hi, I'm Christen Strags. I was a Strength Coach in the WNBA. I trained some of your favorite athletes.</p>
-    <ul>
-      <li>Kelsey Plum</li>
-      <li>Dearica Hamby</li>
-      <li>Kayla McBride</li>
-      <li>Becky Hammon</li>
-    </ul>
-    <p>Most of the fitness industry sells you smaller. Athletes train to become more: stronger, faster, more confident, and more powerful. That's what I want women's sports fans to have access to.</p>
-    <p>Training inspired by the athletes you love, made for your real schedule. No gimmicks. No weight-loss pressure. Just getting stronger.</p>
-    <p>If you love women's sports and want the athlete version of yourself, this is your spot. I'm the only former WNBA strength coach offering this. You're getting programming from someone who actually knows how the athletes you watch train.</p>
-    <a href="#pricing" class="cta-button">Lock in Founding Pricing Before Jan 5 ↓</a>
-  </div>
+<div><img src="https://i.imgur.com/y4j3SnV.png" alt="Christen Strags" class="about-image"></div>
+<div>
+<p>Hi, I'm Christen Strags. I was a Strength Coach in the WNBA. I trained some of your favorite athletes.</p>
+<ul>
+<li>Kelsey Plum</li>
+<li>Dearica Hamby</li>
+<li>Kayla McBride</li>
+<li>Becky Hammon</li>
+</ul>
+<p>I know exactly what goes into their strength. And it's more doable than you think.</p>
+<p>Most of the fitness industry sells you smaller. But athletes train to become more: stronger, faster, more confident, and more powerful.</p>
+<p>If you love women's sports and want the athlete version of yourself, this is your spot.</p>
+<p>Training inspired by the athletes you love, made for your real schedule. No gimmicks. No weight-loss pressure. Just getting stronger.</p>
+<a href="#pricing" class="cta-button">Lock in Founding Pricing Before Jan 5 ↓</a>
+</div>
 </div>
 </section>
 
 <!-- SECTION 7: FAQ -->
 <section class="section">
-<h2 style="text-align:center;">FAQ</h2>
-<div style="max-width:800px; margin:40px auto;">
+<h2>FAQ</h2>
 <div class="faq-item">
-  <h3>Is this program for beginners?</h3>
-  <p>This program is best for women who already have some weightlifting experience. But I personally help you start where you are. You don't need to be "ready." You just need to start.</p>
+<h3>Is this program for beginners?</h3>
+<p>This program is best for women who already have some weightlifting experience. But I promise to personally help you start where you are. The program meets you at your level—whether you've been lifting regularly or you're getting back into it. You don't need to be "ready." You just need to start.</p>
 </div>
 <div class="faq-item">
-  <h3>How many workouts are there per week?</h3>
-  <p>The program includes 3 structured workouts per week with an optional 4th session to accelerate progress.</p>
+<h3>How many workouts are there per week?</h3>
+<p>The program includes 3 structured workouts per week with an optional 4th workout. Three sessions per week are enough for significant results, and you can add the fourth to accelerate progress.</p>
 </div>
 <div class="faq-item">
-  <h3>Do I need a gym?</h3>
-  <p>Nope! Gym and dumbbell-only options included.</p>
-</div>
-<div class="faq-item">
-  <h3>Can I pay monthly?</h3>
-  <p>Founding pricing is quarterly or annual only. Quarterly renews automatically at $149 (new members pay $179).</p>
-</div>
-<div class="faq-item">
-  <h3>Will I get coaching support?</h3>
-  <p>Yes, monthly content, guidance, and access to me through the app.</p>
-</div>
+<h3>Do I need a gym?</h3>
+<p>Nope! There are both gym and dumbbell-only workouts included. You'll need at least dumbbells and a bench, but most exercises can be done at home.</p>
 </div>
 </section>
 
@@ -282,44 +277,10 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 <section class="footer-cta">
 <h2>Let's Build Some Serious Strength in 2025</h2>
 <p>5 women locked in founding member pricing this week. You have until January 5th to join them. After that, quarterly goes from $149 to $179. Annual goes from $499 to $549. Lock in the founding rate now. Pay less. Forever.</p>
-<a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T" class="stripe-btn" data-plan="quarterly">Join Quarterly - $149 Forever</a>
-<a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U" class="stripe-btn" data-plan="annual" style="margin-left:20px;">Join Annual - $499 Forever</a>
+<a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T" onclick="gtag('event','click_quarterly',{event_category:'conversion'});">Join Quarterly - $149 Forever</a>
+<br><br>
+<a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U" onclick="gtag('event','click_annual',{event_category:'conversion'});">Join Annual - $499 Forever</a>
 </section>
-
-<!-- JS: Countdown Timer & GA Tracking -->
-<script>
-// Countdown Timer
-const countdownEl = document.getElementById('countdown');
-const targetDate = new Date('Jan 5, 2026 23:59:59').getTime();
-
-function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = targetDate - now;
-
-  if(distance < 0){
-    countdownEl.innerHTML = "Founding Member Pricing Ended!";
-    return;
-  }
-
-  const days = Math.floor(distance/(1000*60*60*24));
-  const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
-  const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
-  const seconds = Math.floor((distance%(1000*60))/1000);
-
-  countdownEl.innerHTML = `Founding Pricing Ends In: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-}
-setInterval(updateCountdown,1000);
-updateCountdown();
-
-// GA Click Tracking
-document.querySelectorAll('.stripe-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const plan = btn.getAttribute('data-plan');
-    gtag('event','click',{'event_category':'Button','event_label':plan});
-  });
-});
-</script>
 
 </body>
 </html>
-
