@@ -21,31 +21,35 @@
 body {font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; line-height:1.6; color:#1a1a1a; background:#fff;}
 a {text-decoration:none;}
 
-/* Alert Bar */
+/* Alert Bar - ENHANCED FOR VISIBILITY */
 .alert-bar {
-  background: white;
-  color: #800020;
+  background: #6b0d1f;
+  color: white;
   text-align: center;
-  padding: 10px;
-  font-weight: 700;
-  font-size: 1rem;
+  padding: 16px 10px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  border-bottom: 3px solid #DAA520;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-.alert-bar span {color:#1e3a5f;}
+.alert-bar span {color:#DAA520; font-weight:900;}
 
-/* HERO */
+/* HERO - GRADIENT FLIPPED */
 .hero {
-    background: linear-gradient(135deg, #800020 0%, #1e3a5f 100%);
+    background: linear-gradient(135deg, #1e3a5f 0%, #800020 100%);
     color: white;
     text-align:center;
     padding:120px 20px;
 }
 .hero-title {font-size:3rem; font-weight:900; margin-bottom:15px; text-transform:uppercase;}
-.hero-subtitle {font-size:1.5rem; margin-bottom:30px; line-height:1.6;}
-.cta-button {display:inline-block; background:#DAA520; color:#1a1a1a; padding:18px 40px; font-weight:700; border-radius:4px; text-transform:uppercase; margin-top:20px; transition:all 0.3s;}
-.cta-button:hover {background:#1e3a5f; color:white;}
+.hero-subtitle {font-size:1.5rem; margin-bottom:20px; line-height:1.6;}
+.hero-detail {font-size:1.2rem; margin-bottom:15px; line-height:1.5;}
+.hero-social-proof {font-size:1.15rem; margin-top:20px; margin-bottom:25px; color:#DAA520; font-weight:700;}
+.cta-button {display:inline-block; background:#DAA520; color:#1a1a1a; padding:18px 40px; font-weight:700; border-radius:4px; text-transform:uppercase; margin-top:20px; transition:all 0.3s; font-size:1rem;}
+.cta-button:hover {background:#fff; color:#1e3a5f; transform:scale(1.05);}
 
 /* Sections */
-.section {padding:20px 20px; max-width:1200px; margin:0 auto;}
+.section {padding:60px 20px; max-width:1200px; margin:0 auto;}
 h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:uppercase; letter-spacing:-0.5px; text-align:center;}
 .section-dark {background:#1a1a1a; color:white;}
 .section-dark h2 {color:#DAA520;}
@@ -60,11 +64,12 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 .section-dark .quote-card p {color:white;}
 
 /* About / Bio */
-.about-section {display:grid; grid-template-columns:1fr 2fr; gap:60px; align-items:start; margin-bottom:60px;}
+.about-section {display:grid; grid-template-columns:1fr 2fr; gap:60px; align-items:start; margin-bottom:0;}
 .about-image {width:100%; border-radius:8px; border:5px solid #800020;}
 .about-section ul {list-style:none; margin:15px 0 20px 0; padding-left:20px;}
-.about-section ul li {position:relative; padding-left:20px; margin-bottom:10px;}
+.about-section ul li {position:relative; padding-left:20px; margin-bottom:10px; font-size:1.1rem;}
 .about-section ul li:before {content:"✓"; position:absolute; left:0; color:#800020; font-weight:bold;}
+.about-section p {font-size:1.1rem; margin-bottom:15px; line-height:1.7;}
 
 /* Testimonial */
 .testimonial {background:#800020; color:white; padding:60px 40px; border-radius:8px; margin:60px auto; max-width:1100px; text-align:center;}
@@ -89,26 +94,34 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 /* FAQ */
 .faq-item {margin-bottom:30px; padding-bottom:30px; border-bottom:2px solid #eee;}
 .faq-item h3 {color:#800020; margin-bottom:15px; font-size:1.3rem;}
+.faq-item p {font-size:1.05rem; line-height:1.6;}
 
 /* Footer CTA */
-.footer-cta {background:linear-gradient(135deg,#800020 0%,#1e3a5f 100%); color:white; text-align:center; padding:80px 20px;}
+.footer-cta {background:linear-gradient(135deg,#1e3a5f 0%,#800020 100%); color:white; text-align:center; padding:80px 20px;}
 .footer-cta h2 {font-size:3rem; margin-bottom:20px;}
-.footer-cta p {font-size:1.3rem; margin-bottom:30px;}
+.footer-cta p {font-size:1.3rem; margin-bottom:20px; line-height:1.6;}
+.footer-cta .highlight {color:#DAA520; font-weight:700;}
 .footer-cta a {display:inline-block; background:#DAA520; color:#1a1a1a; padding:18px 40px; font-weight:700; border-radius:4px; text-transform:uppercase; margin:10px;}
-.footer-cta a:hover {background:#1e3a5f; color:white;}
+.footer-cta a:hover {background:#fff; color:#1e3a5f;}
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+    .alert-bar {font-size:0.95rem; padding:12px 10px;}
     .hero {padding:60px 20px;}
-    .hero-title {font-size:2.2rem; line-height:2.5rem; margin-bottom:10px;}
-    .hero-subtitle {font-size:1.1rem; line-height:1.6; margin-bottom:20px;}
-    .hero-content {max-width:100%;}
-    .section {padding:15px 15px;}
+    .hero-title {font-size:2rem; line-height:2.3rem; margin-bottom:10px;}
+    .hero-subtitle {font-size:1.1rem; line-height:1.6; margin-bottom:15px;}
+    .hero-detail {font-size:1rem; line-height:1.4; margin-bottom:12px;}
+    .hero-social-proof {font-size:1rem;}
+    .cta-button {font-size:0.9rem; padding:15px 30px;}
+    .section {padding:40px 15px;}
+    h2 {font-size:2rem;}
     .about-section {grid-template-columns:1fr;}
     .about-section p {margin-bottom:15px; line-height:1.6;}
     .testimonial-photos {display:grid !important; grid-template-columns:1fr 1fr !important; gap:10px !important;}
     .testimonial-photos img {grid-column:span 1 !important; width:100% !important; height:auto !important;}
     .quote-card p {font-size:1rem;}
+    .footer-cta h2 {font-size:2rem;}
+    .footer-cta p {font-size:1.1rem;}
     .footer-cta a {display:block; width:80%; max-width:300px; margin:10px auto;}
 }
 </style>
@@ -116,18 +129,19 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 
 <body>
 
-<!-- ALERT BAR WITH COUNTDOWN -->
+<!-- ALERT BAR WITH COUNTDOWN - ENHANCED -->
 <div class="alert-bar">
   ⚠️ Founding Member Pricing Ends <span id="countdown"></span>
 </div>
 
-<!-- HERO -->
+<!-- HERO - GRADIENT FLIPPED -->
 <section class="hero">
     <div class="hero-content">
         <h1 class="hero-title">Get Strong Like Your Favorite Female Athletes</h1>
-        <p class="hero-subtitle">The only strength program for women’s sports fans built by a former WNBA Strength Coach.<br>
-           </ul>
-        </p>I’m Christen Strags and I trained WNBA All-Stars and Olympians and now I’m training you.</p>
+        <p class="hero-subtitle">The only strength program for women's sports fans built by a former WNBA Strength Coach.</p>
+        <p class="hero-detail">I'm Christen Strags. I spent 7 seasons training WNBA All-Stars and Olympians—Kelsey Plum, Dearica Hamby, Kayla McBride, Becky Hammon.</p>
+        <p class="hero-detail">Now I'm bringing that same programming to women's sports fans who want to get strong like the athletes they watch.</p>
+        <p class="hero-social-proof">Founding members are locking in their rates this week.</p>
         <a href="#pricing" class="cta-button">Join Sports Bra Strength ↓</a>
     </div>
 </section>
@@ -165,19 +179,22 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
             <img src="https://i.imgur.com/y4j3SnV.png" alt="Christen Strags" class="about-image">
         </div>
         <div>
-            <h2>Get trained by a former WNBA Strength Coach</h2>
-            <p>Hi, I'm Christen Strags and I trained some of your favorite athletes in the WNBA.</p>
-            <p>If you love women's sports and want the athlete version of yourself, this is your spot.</p>
+            <h2>Why I Built This</h2>
+            <p>Hi, I'm Christen Strags. I spent 7 seasons as a WNBA Strength Coach training All-Stars and Olympians.</p>
+            <p>I trained:</p>
             <ul>
                 <li>Kelsey Plum</li>
                 <li>Dearica Hamby</li>
                 <li>Kayla McBride</li>
                 <li>Becky Hammon</li>
             </ul>
-            <p>Most of the fitness industry sells you smaller.</p>
-            <p>Athletes train to become stronger, faster, more confident, and more powerful.</p>
-            <p>If you want bigger arms and more defined quads, not a bigger butt, I got you.</p>
-            <p>After 7 seasons of training pro athletes, I'm applying those same training principles to you, adapted for your busy life.</p>
+            <p>I know exactly what goes into their strength. And it's more doable than you think.</p>
+            <p>Most of the fitness industry sells you smaller. But athletes train to become more: stronger, faster, more confident, and more powerful.</p>
+            <p>That's what I want women's sports fans to have access to.</p>
+            <p><strong>And here's the truth: I'm the only former WNBA strength coach offering this.</strong></p>
+            <p>I searched. Other WNBA coaches are still with teams. Other programs for women aren't led by someone who trained pros.</p>
+            <p>You're getting programming from someone who actually knows how the athletes you watch train.</p>
+            <p>If you want bigger arms and more defined quads—not a bigger butt—I got you.</p>
         </div>
     </div>
 </section>
@@ -188,46 +205,47 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     <h2>What You Get</h2>
     <div class="quote-grid">
         <div class="quote-card"><h3>12-Week Strength Program</h3><p>Build visible muscle with progressive overload, compound lifts, and targeted results for the physique you want.</p></div>
-        <div class="quote-card"><h3>Training App with Messaging Feature</h3><p>Video demos, workout tracking, plus message me for questions and form check videos.</p></div>
+        <div class="quote-card"><h3>Training App with Direct Access</h3><p>Video demos, workout tracking, PLUS direct messaging for coaching questions and form checks.</p></div>
         <div class="quote-card"><h3>Private Community</h3><p>Connect with women who want to get strong like their favorite female athletes. Share wins and stay accountable.</p></div>
         <div class="quote-card"><h3>Monthly Coaching Support</h3><p>Receive coaching guidance, bonus content, and themes to keep your results accelerating.</p></div>
         <div class="quote-card"><h3>New 12-Week Cycles Every Quarter</h3><p>The program evolves. If you go annual, you get fresh programming every 3 months.</p></div>
-        <div class="quote-card"><h3>I'll Help You Start Where You Are</h3><p>Whether you've been lifting consistently or getting back into it, the program meets you at your level. You just need to start.</p></div>
+        <div class="quote-card"><h3>I'll Help You Start Where You Are</h3><p>Whether you've been lifting consistently or getting back into it, the program meets you at your level. You don't need to be "ready." You just need to start.</p></div>
     </div>
 </section>
 
 <!-- PRICING -->
 <section class="section" id="pricing">
     <h2>Join Sports Bra Strength</h2>
-    <p style="text-align:center; font-size:1.2rem; margin-bottom:20px;">Founding Member Pricing ends soon. Lock in your rate now.</p>
+    <p style="text-align:center; font-size:1.3rem; margin-bottom:10px; font-weight:700; color:#800020;">Founding Member Pricing Ends January 5th</p>
+    <p style="text-align:center; font-size:1.1rem; margin-bottom:30px;">Lock in your rate now. After Jan 5, new members pay more.</p>
     <div class="pricing-grid">
         <div class="pricing-card">
             <h3>Quarterly</h3>
-            <div class="price">$149<span class="price-period">/3 months</span></div>
-            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Price will increase after Jan 5</p>
+            <div class="price">$149<span class="price-period">/quarterly</span></div>
+            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Lock in $149/quarterly FOREVER</p>
             <ul class="features-list">
                 <li>12-week strength program</li>
-                <li>Training app with messaging feature</li>
+                <li>Training app with direct messaging</li>
                 <li>Private community</li>
                 <li>Monthly support & content</li>
-                <li>Renews every 3 months (Price increases to $179 after Jan 5th)</li>
+                <li>Renews at $149 forever (New members pay $179 after Jan 5)</li>
             </ul>
-            <a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T" class="cta-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Quarterly'});">Join Quarterly for $149</a>
+            <a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Quarterly'});">Lock in $149/Quarterly Forever</a>
         </div>
         <div class="pricing-card" style="border-color:#DAA520; border-width:4px;">
             <div style="background:#DAA520; color:#1a1a1a; padding:10px; margin:-40px -40px 20px; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Best Value</div>
             <h3>Annual</h3>
-            <div class="price">$499<span class="price-period">/year</span></div>
-            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Price will increase after Jan 5</p>
+            <div class="price">$499<span class="price-period">/annually</span></div>
+            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Lock in $499/annually FOREVER</p>
             <ul class="features-list">
                 <li>12-week strength program</li>
                 <li>Full year app access</li>
                 <li>Private community</li>
                 <li>Monthly support & content</li>
                 <li>New cycles every quarter</li>
-                <li>Price increases to $549 annually after Jan 5th</li>
+                <li>$499/annually forever (New members pay $549 after Jan 5)</li>
             </ul>
-            <a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U" class="cta-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Annual'});">Join Annual for $499</a>
+            <a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Annual'});">Lock in $499/Annually Forever</a>
         </div>
     </div>
 </section>
@@ -238,7 +256,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     <div style="max-width:800px; margin:40px auto;">
         <div class="faq-item">
             <h3>Is this program for beginners?</h3>
-            <p>This program is best for women who already have some weightlifting experience. We provide gym and dumbbell options, but a basic foundation of lifting is required.</p>
+            <p>This program is best for women who already have some weightlifting experience. <strong>But I promise to personally help you start where you are.</strong> The program meets you at your level—whether you've been lifting regularly or you're getting back into it. You don't need to be "ready." You just need to start.</p>
         </div>
         <div class="faq-item">
             <h3>How many workouts are there per week?</h3>
@@ -250,7 +268,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
         </div>
         <div class="faq-item">
             <h3>Can I pay monthly?</h3>
-            <p>We ask for a 3-month minimum commitment to ensure results.</p>
+            <p>We ask for a 3-month minimum commitment to ensure results. One month isn't nearly enough time and we want to set you up for success.</p>
         </div>
         <div class="faq-item">
             <h3>How long until I see results?</h3>
@@ -258,17 +276,20 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
         </div>
         <div class="faq-item">
             <h3>What if I have restrictions?</h3>
-            <p>If you have injuries or limitations, email <a href="mailto:info@christenstrags.com">info@christenstrags.com</a> to discuss personalized options.</p>
+            <p>If you have injuries or limitations, email <a href="mailto:info@christenstrags.com" style="color:#800020; font-weight:700;">info@christenstrags.com</a> to discuss personalized options.</p>
         </div>
     </div>
 </section>
 
 <!-- FOOTER CTA -->
 <section class="footer-cta">
-    <h2>Let's Build Some Serious Strength in 2026</h2>
-    <p>Lock in your founding rate before pricing increases after Jan 5.</p>
-    <a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T">Join Quarterly for $149</a>
-    <a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U">Join Annual for $499</a>
+    <h2>Let's Build Some Serious Strength in 2025</h2>
+    <p><span class="highlight">Founding members are locking in their rates this week.</span></p>
+    <p>You have until January 5th to join them.</p>
+    <p>After that, quarterly goes from $149 to $179. Annual goes from $499 to $549.</p>
+    <p style="font-size:1.5rem; font-weight:700; margin-top:20px;">Lock in the founding rate now. Pay less. Forever.</p>
+    <a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T">Lock in $149/Quarterly</a>
+    <a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U">Lock in $499/Annually</a>
 </section>
 
 <!-- Countdown Script -->
@@ -277,8 +298,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
   function updateCountdown() {
     const now = new Date().getTime();
     const distance = countdownDate - now;
-    if(distance<0){document.getElementById("countdown").innerHTML="Pricing has ended"; clearInterval(interval); return
-    }
+    if(distance<0){document.getElementById("countdown").innerHTML="Pricing has ended"; clearInterval(interval); return;}
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
