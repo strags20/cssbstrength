@@ -34,19 +34,6 @@
 body {font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; line-height:1.6; color:#1a1a1a; background:#fff;}
 a {text-decoration:none;}
 
-/* Alert Bar */
-.alert-bar {
-  background: #6b0d1f;
-  color: white;
-  text-align: center;
-  padding: 16px 10px;
-  font-weight: 800;
-  font-size: 1.1rem;
-  border-bottom: 3px solid #DAA520;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-.alert-bar span {color:#DAA520; font-weight:900;}
-
 /* HERO */
 .hero {
     background: linear-gradient(135deg, #1e3a5f 0%, #800020 100%);
@@ -130,7 +117,6 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 
 /* Mobile */
 @media (max-width: 768px) {
-    .alert-bar {font-size:0.95rem; padding:12px 10px;}
     .hero {padding:60px 20px 50px;}
     .hero-title {font-size:2rem; line-height:1.2;}
     .hero-subtitle {font-size:1.1rem;}
@@ -152,16 +138,11 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 
 <body>
 
-<!-- ALERT BAR -->
-<div class="alert-bar">
-  ⚠️ Founding Member Pricing Ends <span id="countdown"></span>
-</div>
-
 <!-- HERO -->
 <section class="hero">
     <h1 class="hero-title">For Women's Sports Fans Who Want to Get Actually Strong</h1>
     <p class="hero-subtitle">12-week strength program built by a former WNBA Strength Coach. Pro-level methods adapted for your real life.</p>
-    <p class="hero-proof">Get in at the lowest rate possible—founding member pricing ends January 5th.</p>
+    <p class="hero-proof">Join 17+ women's sports fans already training in the lifting club.</p>
     <a href="#pricing" class="cta-button">Join Sports Bra Strength ↓</a>
 </section>
 
@@ -207,6 +188,19 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     </div>
 </section>
 
+<!-- CURRENT MEMBER FEEDBACK -->
+<section class="section" style="background:#f5f5f5; padding:50px 20px;">
+    <div style="max-width:800px; margin:0 auto; text-align:center;">
+        <div style="background:white; padding:40px; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1); border-left:5px solid #800020;">
+            <p style="font-size:1.3rem; font-style:italic; line-height:1.7; color:#1a1a1a; margin-bottom:20px;">
+                "I love the app, so intuitive and simple. The habits are great also. I struggle with protein so having that to keep myself accountable is helpful. Great first day, videos were perfect for instruction, thank you!"
+            </p>
+            <p style="font-weight:700; color:#800020; font-size:1.1rem; margin-bottom:5px;">— Current Member, Day 1</p>
+            <p style="color:#666; font-size:0.95rem;">Program started January 6, 2026</p>
+        </div>
+    </div>
+</section>
+
 <!-- TESTIMONIAL -->
 <div class="testimonial">
     <p class="testimonial-text">"I needed to rebuild and my vision was Skylar's Quads and Gabby's arms. Within 6 months, Christen transformed me and set me on that path! Results? Hail YES!"</p>
@@ -248,7 +242,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     <h2>Here's What Happens When You Join</h2>
     <div class="next-steps-list">
         <p><strong>Immediate access</strong> to the training app</p>
-        <p><strong>Program starts January 5th</strong> (you can get started right away)</p>
+        <p><strong>Program is already running</strong> (join anytime and jump in)</p>
         <p><strong>Welcome email with setup instructions</strong> within 24 hours</p>
         <p><strong>Join the private in-app community</strong> of women's sports fans who lift</p>
         <p><strong>Access both Gym and DB-Only versions</strong>—switch as needed</p>
@@ -258,36 +252,35 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 <!-- PRICING -->
 <section class="section" id="pricing">
     <h2>Join Sports Bra Strength</h2>
-    <p style="text-align:center; font-size:1.3rem; margin-bottom:10px; font-weight:700; color:#800020;">Founding Member Pricing Ends January 5th</p>
-    <p style="text-align:center; font-size:1.1rem; margin-bottom:30px;">Lock in your rate now. After Jan 5, new members pay more.</p>
+    <p style="text-align:center; font-size:1.1rem; margin-bottom:30px;">Choose the plan that works for you</p>
     <div class="pricing-grid">
         <div class="pricing-card">
             <h3>Quarterly</h3>
-            <div class="price">$149<span class="price-period">/quarterly</span></div>
-            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Lock in $149/quarterly FOREVER</p>
+            <div class="price">$179<span class="price-period">/quarterly</span></div>
+            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Billed every 3 months</p>
             <ul class="features-list">
                 <li>12-week strength program</li>
                 <li>Training app with direct messaging</li>
                 <li>Private in-app community</li>
                 <li>Monthly support & content</li>
-                <li>Renews at $149 forever</li>
+                <li>Cancel anytime</li>
             </ul>
-            <a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Quarterly'});">Lock in $149/Quarterly Forever</a>
+            <a href="https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Quarterly'});">Join for $179/Quarterly</a>
         </div>
         <div class="pricing-card" style="border-color:#DAA520; border-width:4px;">
-            <div style="background:#DAA520; color:#1a1a1a; padding:10px; margin:-40px -40px 20px; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Best Value</div>
+            <div style="background:#DAA520; color:#1a1a1a; padding:10px; margin:-40px -40px 20px; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Best Value - Save Over $100</div>
             <h3>Annual</h3>
-            <div class="price">$499<span class="price-period">/annually</span></div>
-            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Lock in $499/annually FOREVER</p>
+            <div class="price">$599<span class="price-period">/annually</span></div>
+            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Pay once for the full year</p>
             <ul class="features-list">
                 <li>12-week strength program</li>
                 <li>Full year app access</li>
                 <li>Private in-app community</li>
                 <li>Monthly support & content</li>
                 <li>New cycles every quarter</li>
-                <li>$499/annually forever</li>
+                <li>Save over $100 vs quarterly</li>
             </ul>
-            <a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Annual'});">Lock in $499/Annually Forever</a>
+            <a href="https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Annual'});">Join for $599/Annually</a>
         </div>
     </div>
 </section>
@@ -329,30 +322,12 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 
 <!-- FOOTER CTA -->
 <section class="footer-cta">
-    <h2>Lock in the Founding Rate Before It's Gone</h2>
-    <p><span class="highlight">You have until January 5th.</span></p>
-    <p>After that, quarterly goes to $179. Annual goes to $549.</p>
-    <p style="font-size:1.4rem; font-weight:700; margin-top:20px;">Join now. Pay less. Forever.</p>
-    <a href="https://buy.stripe.com/28E00ieoTel93DA04K0RG0T">Lock in $149/Quarterly</a>
-    <a href="https://buy.stripe.com/8x2aEWa8D4Kz7TQ7xc0RG0U">Lock in $499/Annually</a>
+    <h2>Ready to Get Strong Like Your Favorite Athletes?</h2>
+    <p>Join 17+ women's sports fans already training in the lifting club.</p>
+    <p style="font-size:1.4rem; font-weight:700; margin-top:20px;">Stop guessing. Start building.</p>
+    <a href="https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V">Join for $179/Quarterly</a>
+    <a href="https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X">Join for $599/Annually</a>
 </section>
-
-<!-- Countdown Script -->
-<script>
-  const countdownDate = new Date("January 5, 2026 23:59:59").getTime();
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = countdownDate - now;
-    if(distance<0){document.getElementById("countdown").innerHTML="Pricing has ended"; clearInterval(interval); return;}
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-  }
-  updateCountdown();
-  const interval = setInterval(updateCountdown, 1000);
-</script>
 
 </body>
 </html>
