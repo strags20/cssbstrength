@@ -52,7 +52,7 @@ a {text-decoration:none;}
 .hook p {font-size:1.25rem; line-height:1.8; max-width:850px; margin:0 auto 20px;}
 .hook .big {font-size:1.5rem; font-weight:700; color:#800020; margin:25px auto;}
 
-/* Credibility Section - NEW */
+/* Credibility Section */
 .credibility {
     background: #1a1a1a;
     color: white;
@@ -125,13 +125,45 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 .section-dark h2 {color:#DAA520;}
 .section-accent {background:#f5f5f5;}
 
-/* Quote Grid */
-.quote-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; margin-top:40px;}
-.quote-card {background:white; padding:30px; border-left:4px solid #800020; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
-.quote-card p {font-style:italic; font-size:1.15rem; line-height:1.6; color:#333;}
-.section-dark .quote-card {background:#2a2a2a; color:white;}
-.section-dark .quote-card h3 {font-size:1.4rem; margin-bottom:15px; color:#DAA520; text-transform:uppercase; font-weight:700;}
-.section-dark .quote-card p {color:white; font-style:normal; font-size:1.1rem;}
+/* What You Get Section - Dark themed */
+.what-you-get-section {
+    background: #1a1a1a;
+    padding: 60px 20px;
+}
+.what-you-get-section h2 {
+    color: #DAA520;
+    margin-bottom: 50px;
+}
+.what-you-get-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.feature-card {
+    background: #2a2a2a;
+    padding: 35px;
+    border-radius: 8px;
+    border-left: 5px solid #DAA520;
+    transition: all 0.3s;
+}
+.feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.2);
+}
+.feature-card h3 {
+    color: #DAA520;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.feature-card p {
+    color: #e0e0e0;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
 
 /* Testimonials Section */
 .testimonials-section {background:#f5f5f5; padding:60px 20px;}
@@ -262,9 +294,9 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 
 <!-- HERO -->
 <section class="hero">
-    <h1 class="hero-title">For Women's Sports Fans Who Want to Get Actually Strong</h1>
+    <h1 class="hero-title">For Women's Sports Fans Who Want to Get Strong Like Their Fav Female Athletes</h1>
     <p class="hero-subtitle">12-week strength program built by a former WNBA Strength Coach. Pro-level methods adapted for your real life.</p>
-    <p class="hero-proof">Join other women's sports fans already training in the lifting club.</p>
+    <p class="hero-proof">Join other women's sports fans already getting stronger together.</p>
     <a href="#pricing" class="cta-button">Join Sports Bra Strength ↓</a>
 </section>
 
@@ -279,7 +311,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     <p style="font-size:1.2rem; margin-top:30px; font-weight:600;">It's time to feel confident in the gym.</p>
 </section>
 
-<!-- CREDIBILITY SECTION - NEW -->
+<!-- CREDIBILITY SECTION -->
 <section class="credibility">
     <h2 class="credibility-title">The Only Strength Program Built by a Former WNBA Coach</h2>
     <div class="credibility-content">
@@ -305,7 +337,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
             </div>
 
             <div class="only-statement">
-                I'm the only former WNBA strength coach offering virtual programming to consumers. Other WNBA coaches are still with teams. Other programs for women aren't led by someone who trained pros.
+                I'm the only former WNBA strength coach offering complete programming for women's sports fans who want to get strong like their favorite female athletes. You might be able to find a workout or two online, but nowhere else can you get a complete blueprint.
             </div>
 
             <p class="credibility-text" style="margin-top:25px;">When women's sports fans told me they wanted Jackie Young arms, A'ja Wilson's strength, and Tash Cloud's delts—I knew exactly how to build that. Because I've built it before.</p>
@@ -313,33 +345,33 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     </div>
 </section>
 
-<!-- WHAT YOU GET -->
-<section class="section" style="background:#fff; padding:60px 20px;">
-    <h2 style="color:#1a1a1a;">What You Get</h2>
-    <div class="quote-grid">
-        <div class="quote-card">
-            <h3 style="color:#800020;">Clarity in a Proven Plan</h3>
-            <p style="color:#333; font-style:normal;">No more guessing what to do next. Get a clear, progressive program designed by someone who trained the pros.</p>
+<!-- WHAT YOU GET - Dark themed -->
+<section class="what-you-get-section">
+    <h2>What You Get</h2>
+    <div class="what-you-get-grid">
+        <div class="feature-card">
+            <h3>Clarity in a Proven Plan</h3>
+            <p>No more guessing what to do next. Get a clear, progressive program designed by someone who trained the pros.</p>
         </div>
-        <div class="quote-card">
-            <h3 style="color:#800020;">30-45 Minute Workouts</h3>
-            <p style="color:#333; font-style:normal;">No unrealistic "athlete schedules" required. Strength training that actually fits your life—not takes it over.</p>
+        <div class="feature-card">
+            <h3>30-45 Minute Workouts</h3>
+            <p>No unrealistic "athlete schedules" required. Strength training that actually fits your life—not takes it over.</p>
         </div>
-        <div class="quote-card">
-            <h3 style="color:#800020;">Learn What Works for YOU</h3>
-            <p style="color:#333; font-style:normal;">Track connections between habits and performance. Experiment with what works best. Build practices you can use forever.</p>
+        <div class="feature-card">
+            <h3>Learn What Works for YOU</h3>
+            <p>Track connections between habits and performance. Experiment with what works best. Build practices you can use forever.</p>
         </div>
-        <div class="quote-card">
-            <h3 style="color:#800020;">Gym + DB-Only Versions (Synced)</h3>
-            <p style="color:#333; font-style:normal;">Same workout, different equipment. Switch between gym and home versions seamlessly—your progress carries over.</p>
+        <div class="feature-card">
+            <h3>Gym + DB-Only Versions (Synced)</h3>
+            <p>Same workout, different equipment. Switch between gym and home versions seamlessly—your progress carries over.</p>
         </div>
-        <div class="quote-card">
-            <h3 style="color:#800020;">Direct Access to Coaching</h3>
-            <p style="color:#333; font-style:normal;">Video demos, workout tracking, PLUS direct messaging for form checks and questions.</p>
+        <div class="feature-card">
+            <h3>Direct Access to Coaching</h3>
+            <p>Video demos, workout tracking, PLUS direct messaging for form checks and questions.</p>
         </div>
-        <div class="quote-card">
-            <h3 style="color:#800020;">Private In-App Community</h3>
-            <p style="color:#333; font-style:normal;">Connect with other women's sports fans who lift. Share wins, stay accountable, build real friendships.</p>
+        <div class="feature-card">
+            <h3>Private In-App Community</h3>
+            <p>Connect with other women's sports fans who lift. Share wins, stay accountable, build real friendships.</p>
         </div>
     </div>
 </section>
@@ -403,19 +435,19 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     </div>
 </section>
 
-<!-- WHY I BUILT THIS - EXPANDED -->
+<!-- WHY I BUILT THIS - Community focused -->
 <section class="section" style="background:#fff; padding:60px 20px;">
     <h2 style="color:#1a1a1a;">Why I Built This</h2>
     <div style="max-width:900px; margin:40px auto;">
-        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">I know exactly what goes into their strength. And it's more doable than you think.</p>
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">Because being surrounded by people who get it changes everything.</p>
         
-        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;"><strong>Here's the truth: I'm the only former WNBA strength coach offering this.</strong></p>
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">I know it feels like women's sports fans find each other. Feeling like you can talk about the players and use just first names. Brag that your team won a championship last year and theirs didn't. Debate which leagues will prosper and which ones seem to be a sinking ship.</p>
         
-        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">I searched. Other WNBA coaches are still with teams. Other programs for women aren't led by someone who trained pros.</p>
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">This isn't just about getting stronger. It's about being in a space where your goals make sense. Where wanting Jackie Young's arms or A'ja Wilson's power is celebrated.</p>
         
-        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">You're getting programming from someone who actually knows how the athletes you watch train.</p>
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">You're chasing dreams alongside people who share your passion for women's sports. Who understand why that buzzer-beater matters. Who text you about last night's highlights before asking about your workout.</p>
         
-        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">When women's sports fans told me they wanted Jackie Young arms, A'ja Wilson's strength, and Tash Cloud's delts—I knew exactly how to build that. Because I've built it before.</p>
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;"><strong>Sports Bra Strength is where women's sports fans train together, talk sports together, and chase strength together.</strong></p>
     </div>
 </section>
 
@@ -465,7 +497,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
             <div style="background:#DAA520; color:#1a1a1a; padding:10px; margin:-40px -40px 20px; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Best Value - Save Over $100</div>
             <h3>Annual</h3>
             <div class="price">$599<span class="price-period">/annually</span></div>
-            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Pay once for the full year</p>
+            <p style="color:#800020; font-weight:700; margin-bottom:20px;">Save over $100 vs quarterly</p>
             <ul class="features-list">
                 <li>12-week strength program</li>
                 <li>Full year app access</li>
