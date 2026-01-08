@@ -52,6 +52,72 @@ a {text-decoration:none;}
 .hook p {font-size:1.25rem; line-height:1.8; max-width:850px; margin:0 auto 20px;}
 .hook .big {font-size:1.5rem; font-weight:700; color:#800020; margin:25px auto;}
 
+/* Credibility Section - NEW */
+.credibility {
+    background: #1a1a1a;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.credibility-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #DAA520;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+.credibility-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: left;
+}
+.credibility-image {
+    width: 100%;
+    border-radius: 8px;
+    border: 5px solid #DAA520;
+}
+.credibility-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.credibility-stats {
+    display: flex;
+    gap: 40px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #DAA520;
+    display: block;
+}
+.stat-label {
+    font-size: 1rem;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.only-statement {
+    background: #800020;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
 /* Sections */
 .section {padding:60px 20px; max-width:1200px; margin:0 auto;}
 h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:uppercase; letter-spacing:-0.5px; text-align:center;}
@@ -92,14 +158,6 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 .activity-card:hover {transform:translateY(-3px); box-shadow:0 6px 25px rgba(0,0,0,0.4);}
 .activity-card img {width:100%; height:auto; display:block;}
 
-/* About */
-.about-section {display:grid; grid-template-columns:1fr 2fr; gap:60px; align-items:start;}
-.about-image {width:100%; border-radius:8px; border:5px solid #800020;}
-.about-section ul {list-style:none; margin:15px 0 20px 0; padding-left:20px;}
-.about-section ul li {position:relative; padding-left:20px; margin-bottom:10px; font-size:1.1rem;}
-.about-section ul li:before {content:"✓"; position:absolute; left:0; color:#800020; font-weight:bold;}
-.about-section p {font-size:1.1rem; margin-bottom:15px; line-height:1.7;}
-
 /* Testimonial */
 .testimonial {background:#800020; color:white; padding:60px 40px; border-radius:8px; margin:60px auto; max-width:1100px; text-align:center;}
 .testimonial-text {font-size:1.3rem; font-style:italic; margin-bottom:20px; line-height:1.7;}
@@ -127,10 +185,41 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 .pricing-card a {display:block; margin-top:30px; padding:15px; background:#1e3a5f; color:white; font-weight:700; border-radius:4px; transition:all 0.3s;}
 .pricing-card a:hover {background:#DAA520; color:#1a1a1a;}
 
-/* FAQ */
-.faq-item {margin-bottom:30px; padding-bottom:30px; border-bottom:2px solid #eee;}
-.faq-item h3 {color:#800020; margin-bottom:15px; font-size:1.3rem;}
-.faq-item p {font-size:1.05rem; line-height:1.6;}
+/* FAQ Accordion */
+.faq-item {margin-bottom:15px; border:2px solid #eee; border-radius:8px; overflow:hidden;}
+.faq-question {
+    background:#fff;
+    padding:20px 25px;
+    cursor:pointer;
+    font-size:1.2rem;
+    font-weight:700;
+    color:#800020;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:all 0.3s;
+}
+.faq-question:hover {background:#f9f9f9;}
+.faq-question.active {background:#f5f5f5;}
+.faq-icon {
+    font-size:1.5rem;
+    font-weight:700;
+    color:#800020;
+    transition:transform 0.3s;
+}
+.faq-question.active .faq-icon {transform:rotate(45deg);}
+.faq-answer {
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.3s ease, padding 0.3s ease;
+    padding:0 25px;
+    background:#fff;
+}
+.faq-answer.active {
+    max-height:500px;
+    padding:20px 25px;
+}
+.faq-answer p {font-size:1.05rem; line-height:1.7; color:#333;}
 
 /* Footer CTA */
 .footer-cta {background:linear-gradient(135deg,#1e3a5f 0%,#800020 100%); color:white; text-align:center; padding:80px 20px;}
@@ -149,9 +238,14 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     .cta-button {font-size:0.95rem; padding:16px 35px;}
     .hook p {font-size:1.05rem;}
     .hook .big {font-size:1.25rem;}
+    .credibility-title {font-size:1.8rem;}
+    .credibility-content {grid-template-columns:1fr; text-align:center;}
+    .credibility-text {font-size:1.1rem;}
+    .credibility-stats {justify-content:center;}
+    .stat-number {font-size:2.5rem;}
+    .only-statement {font-size:1.15rem; padding:20px;}
     .section {padding:40px 15px;}
     h2 {font-size:2rem;}
-    .about-section {grid-template-columns:1fr;}
     .testimonial-photos {display:grid !important; grid-template-columns:1fr 1fr !important; gap:10px !important;}
     .testimonial-photos img {width:100% !important; height:auto !important;}
     .members-grid {grid-template-columns:1fr;}
@@ -159,6 +253,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     .footer-cta h2 {font-size:2rem;}
     .footer-cta p {font-size:1.1rem;}
     .footer-cta a {display:block; width:80%; max-width:300px; margin:10px auto;}
+    .faq-question {font-size:1.05rem; padding:15px 20px;}
 }
 </style>
 </head>
@@ -169,7 +264,7 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
 <section class="hero">
     <h1 class="hero-title">For Women's Sports Fans Who Want to Get Actually Strong</h1>
     <p class="hero-subtitle">12-week strength program built by a former WNBA Strength Coach. Pro-level methods adapted for your real life.</p>
-    <p class="hero-proof">STOP GUESSING, START BUILDING.</p>
+    <p class="hero-proof">Join other women's sports fans already training in the lifting club.</p>
     <a href="#pricing" class="cta-button">Join Sports Bra Strength ↓</a>
 </section>
 
@@ -184,33 +279,67 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     <p style="font-size:1.2rem; margin-top:30px; font-weight:600;">It's time to feel confident in the gym.</p>
 </section>
 
+<!-- CREDIBILITY SECTION - NEW -->
+<section class="credibility">
+    <h2 class="credibility-title">The Only Strength Program Built by a Former WNBA Coach</h2>
+    <div class="credibility-content">
+        <div>
+            <img src="https://i.imgur.com/y4j3SnV.png" alt="Christen Strags - Former WNBA Strength Coach" class="credibility-image">
+        </div>
+        <div>
+            <p class="credibility-text">Hi, I'm Christen. I spent 7 seasons as a WNBA Strength Coach training some of the best athletes in the world.</p>
+            
+            <div class="credibility-stats">
+                <div class="stat-item">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Olympians</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">WNBA All-Stars</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Hall of Famers</span>
+                </div>
+            </div>
+
+            <div class="only-statement">
+                I'm the only former WNBA strength coach offering virtual programming to consumers. Other WNBA coaches are still with teams. Other programs for women aren't led by someone who trained pros.
+            </div>
+
+            <p class="credibility-text" style="margin-top:25px;">When women's sports fans told me they wanted Jackie Young arms, A'ja Wilson's strength, and Tash Cloud's delts—I knew exactly how to build that. Because I've built it before.</p>
+        </div>
+    </div>
+</section>
+
 <!-- WHAT YOU GET -->
-<section class="section section-dark">
-    <h2>What You Get</h2>
+<section class="section" style="background:#fff; padding:60px 20px;">
+    <h2 style="color:#1a1a1a;">What You Get</h2>
     <div class="quote-grid">
         <div class="quote-card">
-            <h3>Clarity in a Proven Plan</h3>
-            <p>No more guessing what to do next. Get a clear, progressive program designed by someone who trained the pros.</p>
+            <h3 style="color:#800020;">Clarity in a Proven Plan</h3>
+            <p style="color:#333; font-style:normal;">No more guessing what to do next. Get a clear, progressive program designed by someone who trained the pros.</p>
         </div>
         <div class="quote-card">
-            <h3>30-45 Minute Workouts</h3>
-            <p>No unrealistic "athlete schedules" required. Strength training that actually fits your life—not takes it over.</p>
+            <h3 style="color:#800020;">30-45 Minute Workouts</h3>
+            <p style="color:#333; font-style:normal;">No unrealistic "athlete schedules" required. Strength training that actually fits your life—not takes it over.</p>
         </div>
         <div class="quote-card">
-            <h3>Learn What Works for YOU</h3>
-            <p>Track connections between habits and performance. Experiment with what works best. Build practices you can use forever.</p>
+            <h3 style="color:#800020;">Learn What Works for YOU</h3>
+            <p style="color:#333; font-style:normal;">Track connections between habits and performance. Experiment with what works best. Build practices you can use forever.</p>
         </div>
         <div class="quote-card">
-            <h3>Gym + DB-Only Versions (Synced)</h3>
-            <p>Same workout, different equipment. Switch between gym and home versions seamlessly—your progress carries over.</p>
+            <h3 style="color:#800020;">Gym + DB-Only Versions (Synced)</h3>
+            <p style="color:#333; font-style:normal;">Same workout, different equipment. Switch between gym and home versions seamlessly—your progress carries over.</p>
         </div>
         <div class="quote-card">
-            <h3>Direct Access to Coaching</h3>
-            <p>Video demos, workout tracking, PLUS direct messaging for form checks and questions.</p>
+            <h3 style="color:#800020;">Direct Access to Coaching</h3>
+            <p style="color:#333; font-style:normal;">Video demos, workout tracking, PLUS direct messaging for form checks and questions.</p>
         </div>
         <div class="quote-card">
-            <h3>Private In-App Community</h3>
-            <p>Connect with other women's sports fans who lift. Share wins, stay accountable, build real friendships.</p>
+            <h3 style="color:#800020;">Private In-App Community</h3>
+            <p style="color:#333; font-style:normal;">Connect with other women's sports fans who lift. Share wins, stay accountable, build real friendships.</p>
         </div>
     </div>
 </section>
@@ -220,12 +349,16 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     <h2 style="color:#1a1a1a;">What Members Are Saying</h2>
     <div class="testimonials-grid">
         <div class="testimonial-card">
-            <p>"I'm constantly inspired by female athletes and their commitment to show up for themselves. I was looking for a new program and community, and that's when Christen showed up in my feed!"</p>
+            <p>"I saw the WNBA players' physique and told my trainer the next day I need WNBA arms. I met Christen through a book club and the rest is history!"</p>
+            <p class="author">— Kendall, 40s</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"I'm constantly inspired by female athletes and their commitment to show up for themselves and not being shy about being strong. Hello, Jackie Young and my Aces!"</p>
             <p class="author">— Kristi K, 49</p>
         </div>
         <div class="testimonial-card">
-            <p>"I am committed to putting time and energy into strength training this year, and am hopeful having a community to do it with and a knowledgeable coach will help me do this."</p>
-            <p class="author">— Galen J, 51</p>
+            <p>"I was looking for a program and when your post popped up on IG I was super excited! Love your content and definitely looking forward to this!"</p>
+            <p class="author">— Jennifer K, 48</p>
         </div>
     </div>
 </section>
@@ -270,31 +403,23 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     </div>
 </section>
 
-<!-- ABOUT ME -->
-<section class="section">
-    <div class="about-section">
-        <div>
-            <img src="https://i.imgur.com/y4j3SnV.png" alt="Christen Strags" class="about-image">
-        </div>
-        <div>
-            <h2>Why I Built This</h2>
-            <p>Hi, I'm Christen. I spent 7 seasons as a WNBA Strength Coach training some of the best athletes in the world.</p>
-            <p>That included:</p>
-            <ul>
-                <li>7 Olympians</li>
-                <li>15+ WNBA All-Stars</li>
-                <li>2 Basketball Hall of Fame inductees</li>
-            </ul>
-            <p>I know exactly what goes into their strength. And it's more doable than you think.</p>
-            <p><strong>Here's the truth: I'm the only former WNBA strength coach offering this.</strong></p>
-            <p>I searched. Other WNBA coaches are still with teams. Other programs for women aren't led by someone who trained pros.</p>
-            <p>You're getting programming from someone who actually knows how the athletes you watch train.</p>
-            <p>When women's sports fans told me they wanted Jackie Young arms, A'ja Wilson's strength, and Tash Cloud's delts—I knew exactly how to build that. Because I've built it before.</p>
-        </div>
+<!-- WHY I BUILT THIS - EXPANDED -->
+<section class="section" style="background:#fff; padding:60px 20px;">
+    <h2 style="color:#1a1a1a;">Why I Built This</h2>
+    <div style="max-width:900px; margin:40px auto;">
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">I know exactly what goes into their strength. And it's more doable than you think.</p>
+        
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;"><strong>Here's the truth: I'm the only former WNBA strength coach offering this.</strong></p>
+        
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">I searched. Other WNBA coaches are still with teams. Other programs for women aren't led by someone who trained pros.</p>
+        
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">You're getting programming from someone who actually knows how the athletes you watch train.</p>
+        
+        <p style="font-size:1.15rem; line-height:1.8; margin-bottom:20px;">When women's sports fans told me they wanted Jackie Young arms, A'ja Wilson's strength, and Tash Cloud's delts—I knew exactly how to build that. Because I've built it before.</p>
     </div>
 </section>
 
-  <!-- TRANSFORMATION TESTIMONIAL -->
+<!-- TRANSFORMATION TESTIMONIAL -->
 <div class="testimonial">
     <p class="testimonial-text">"I needed to rebuild and my vision was Skylar's Quads and Gabby's arms. Within 6 months, Christen transformed me and set me on that path! Results? Hail YES!"</p>
     <p class="testimonial-author">— Karolyn Y.</p>
@@ -354,37 +479,78 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     </div>
 </section>
 
-<!-- FAQ -->
+<!-- FAQ ACCORDION -->
 <section class="section section-accent">
     <h2>FAQ</h2>
     <div style="max-width:800px; margin:40px auto;">
         <div class="faq-item">
-            <h3>Is this program for beginners?</h3>
-            <p>This program is best for women who already have some weightlifting experience. <strong>But I promise to personally help you start where you are.</strong> The program meets you at your level—whether you've been lifting regularly or you're getting back into it.</p>
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>Is this program for beginners?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>This program is best for women who already have some weightlifting experience. <strong>But I promise to personally help you start where you are.</strong> The program meets you at your level—whether you've been lifting regularly or you're getting back into it.</p>
+            </div>
         </div>
+
         <div class="faq-item">
-            <h3>How many workouts per week?</h3>
-            <p>Three structured workouts per week (30-45 minutes each) with an optional 4th session. It's designed for real schedules and if you miss a workout or two, you can just pick right back up where you left off.</p>
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>How many workouts per week?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Three structured workouts per week (30-45 minutes each) with an optional 4th session. It's designed for real schedules and if you miss a workout or two, you can just pick right back up where you left off.</p>
+            </div>
         </div>
+
         <div class="faq-item">
-            <h3>Do I need a gym?</h3>
-            <p>Nope! You get access to both gym and dumbbell-only workouts. You'll need at least one lighter and one heavier set of dumbbells for the DB-only version. Both programs are loaded into your app so you can do either one or swap back and forth when you need to.</p>
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>Do I need a gym?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Nope! You get access to both gym and dumbbell-only workouts. You'll need at least one lighter and one heavier set of dumbbells for the DB-only version. Both programs are loaded into your app so you can do either one or swap back and forth when you need to.</p>
+            </div>
         </div>
+
         <div class="faq-item">
-            <h3>Can I pay monthly?</h3>
-            <p>We offer a 3 month membership and an annual membership. Real strength takes time to build and you need more than one month to see results.</p>
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>Can I pay monthly?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We offer a 3 month membership and an annual membership. Real strength takes time to build and you need more than one month to see results.</p>
+            </div>
         </div>
+
         <div class="faq-item">
-            <h3>How long until I see results?</h3>
-            <p>You'll feel stronger within 2-3 weeks. Visible changes usually appear around week 8-12.</p>
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>How long until I see results?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>You'll feel stronger within 2-3 weeks. Visible changes usually appear around week 8-12.</p>
+            </div>
         </div>
+
         <div class="faq-item">
-            <h3>What if I have restrictions?</h3>
-            <p>Email <a href="mailto:info@christenstrags.com" style="color:#800020; font-weight:700;">info@christenstrags.com</a> to discuss personalized options.</p>
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>What if I have restrictions?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Email <a href="mailto:info@christenstrags.com" style="color:#800020; font-weight:700;">info@christenstrags.com</a> to discuss personalized options.</p>
+            </div>
         </div>
+
         <div class="faq-item">
-            <h3>Can I cancel anytime?</h3>
-            <p>Yes. Just email <a href="mailto:info@christenstrags.com" style="color:#800020; font-weight:700;">info@christenstrags.com</a> and we'll process your cancellation.</p>
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <span>Can I cancel anytime?</span>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes. Just email <a href="mailto:info@christenstrags.com" style="color:#800020; font-weight:700;">info@christenstrags.com</a> and we'll process your cancellation.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -397,6 +563,30 @@ h2 {font-size:2.5rem; margin-bottom:20px; font-weight:800; text-transform:upperc
     <a href="https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V">Join for $179/Quarterly</a>
     <a href="https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X">Join for $599/Annually</a>
 </section>
+
+<script>
+function toggleFAQ(element) {
+    const answer = element.nextElementSibling;
+    const allQuestions = document.querySelectorAll('.faq-question');
+    const allAnswers = document.querySelectorAll('.faq-answer');
+    
+    // Close all other FAQs
+    allQuestions.forEach(q => {
+        if (q !== element) {
+            q.classList.remove('active');
+        }
+    });
+    allAnswers.forEach(a => {
+        if (a !== answer) {
+            a.classList.remove('active');
+        }
+    });
+    
+    // Toggle current FAQ
+    element.classList.toggle('active');
+    answer.classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
