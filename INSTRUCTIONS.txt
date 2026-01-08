@@ -1,0 +1,47 @@
+SPORTS BRA STRENGTH WEBSITE - DEPLOYMENT INSTRUCTIONS
+====================================================
+
+WHAT'S IN THIS PACKAGE:
+- index.html (your complete website)
+- 11 image files (all the screenshots)
+
+HOW TO DEPLOY (EASIEST METHOD):
+================================
+
+1. Download ALL files in this folder to your computer
+
+2. Upload ALL files to your website hosting in the SAME folder
+   (They must all be together in the same directory)
+
+3. That's it! Your website is live.
+
+NOTES:
+------
+- The images are already linked correctly in the HTML
+- As long as all files are in the same folder, everything will work
+- Your website will be at: https://www.sportsbrastrength.com/index.html
+  (or just https://www.sportsbrastrength.com if index.html is set as default)
+
+FILES INCLUDED:
+===============
+index.html
+IMG_9145.jpg (Bethany intro)
+IMG_9144.jpg (Jennifer intro)
+IMG_9143_2.jpg (Kristi intro)
+IMG_9141.jpg (Galen intro)
+IMG_9137.jpg (Ritika intro)
+IMG_9146_2.jpg (Trisha Orca)
+IMG_9140.jpg (Kendall team energy)
+IMG_9133.jpg (Devin Bison)
+IMG_9132.jpg (Kendall Elephant)
+IMG_9138.jpg (Kristi Grizzly Bear)
+IMG_9131.jpg (Stephanie Elephant)
+
+NEED HELP?
+==========
+If images don't show up:
+- Make sure ALL files are in the same folder on your server
+- Check that image filenames match exactly (case-sensitive)
+- Clear your browser cache and refresh
+
+Questions? Let me know!
