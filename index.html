@@ -31,6 +31,14 @@
 <!-- Canonical URL -->
 <link rel="canonical" href="https://www.sportsbrastrength.com/">
 
+<!-- Crawl directive -->
+<meta name="robots" content="index, follow">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://i.imgur.com">
+
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP5S0KCR9F"></script>
 <script>
@@ -46,13 +54,15 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Sports Bra Strength",
-  "description": "12-week strength training program for women's sports fans built by former WNBA strength coach",
+  "description": "12-week strength training program for women's sports fans built by former WNBA strength coach Christen Strags. Includes gym and dumbbell-only versions, training app, direct coaching access, and private community.",
   "url": "https://www.sportsbrastrength.com",
   "logo": "https://www.sportsbrastrength.com/Sports%20Bra%20Strength%20Logo.png",
+  "email": "info@christenstrags.com",
   "founder": {
     "@type": "Person",
     "name": "Christen Strags",
-    "jobTitle": "Former WNBA Strength Coach"
+    "jobTitle": "Former WNBA Strength Coach",
+    "description": "Christen Strags spent 7 seasons as a WNBA strength coach, training 15+ All-Stars, 7 Olympians, and 2 Hall of Famers."
   },
   "offers": [
     {
@@ -60,21 +70,73 @@
       "name": "Monthly Membership",
       "price": "69",
       "priceCurrency": "USD",
-      "description": "12-week strength program billed monthly, 3-month minimum commitment"
+      "description": "12-week strength program billed monthly, 3-month minimum commitment",
+      "url": "https://buy.stripe.com/28E14mdkPfpdgqm8Bg0RG0Y"
     },
     {
       "@type": "Offer",
       "name": "Quarterly Membership",
       "price": "179",
       "priceCurrency": "USD",
-      "description": "12-week strength program billed every 3 months"
+      "description": "12-week strength program billed every 3 months",
+      "url": "https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V"
     },
     {
       "@type": "Offer",
       "name": "Annual Membership",
       "price": "599",
       "priceCurrency": "USD",
-      "description": "12-week strength program billed annually, save $229 vs monthly"
+      "description": "12-week strength program billed annually, save $229 vs monthly",
+      "url": "https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this for beginners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Best for women with some lifting experience. But I'll personally help you start where you are. The program meets you at your level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many workouts per week?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three workouts (30-45 minutes each) with an optional 4th. Designed for real schedules. Miss one? Just pick back up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a gym?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nope. You get both gym and dumbbell-only versions. Need at least one lighter and one heavier set of dumbbells for DB-only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long until I see results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You'll feel stronger within 2-3 weeks. Visible changes usually appear around week 8-12."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel anytime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Email info@christenstrags.com and we'll process your cancellation."
+      }
     }
   ]
 }
@@ -478,10 +540,10 @@ h2 {font-size:2.5rem; margin-bottom:30px; font-weight:800; text-transform:upperc
     <p class="testimonial-text">"I needed Skylar's quads and Gabby's arms. Within 6 months, Christen transformed me and set me on that path. Results? Hail YES!"</p>
     <p class="testimonial-author">— Karolyn Y.</p>
     <div class="testimonial-photos">
-        <img src="https://i.imgur.com/fCDuzns.jpeg" alt="Karolyn's strength training progress photo showing upper body development">
-        <img src="https://i.imgur.com/gIoE8Bb.jpeg" alt="Karolyn's strength training progress photo showing leg development">
-        <img src="https://i.imgur.com/MG5GdIl.png" alt="Karolyn's strength training progress photo showing full body transformation">
-        <img src="https://i.imgur.com/9WIquQU.jpeg" alt="Karolyn's strength training progress photo showing muscle definition">
+        <img src="https://i.imgur.com/fCDuzns.jpeg" alt="Karolyn's strength training progress photo showing upper body development" loading="lazy">
+        <img src="https://i.imgur.com/gIoE8Bb.jpeg" alt="Karolyn's strength training progress photo showing leg development" loading="lazy">
+        <img src="https://i.imgur.com/MG5GdIl.png" alt="Karolyn's strength training progress photo showing full body transformation" loading="lazy">
+        <img src="https://i.imgur.com/9WIquQU.jpeg" alt="Karolyn's strength training progress photo showing muscle definition" loading="lazy">
     </div>
     <a href="#pricing" class="cta-button" aria-label="View pricing and join Sports Bra Strength">I Want This →</a>
 </aside>
@@ -491,7 +553,7 @@ h2 {font-size:2.5rem; margin-bottom:30px; font-weight:800; text-transform:upperc
     <h2 id="credibility-heading">Why Trust Me?</h2>
     <div class="credibility-content">
         <div>
-            <img src="https://i.imgur.com/y4j3SnV.png" alt="Christen Strags, former WNBA Strength Coach, standing confidently with arms crossed wearing athletic attire" class="credibility-image">
+            <img src="https://i.imgur.com/y4j3SnV.png" alt="Christen Strags, former WNBA Strength Coach, standing confidently with arms crossed wearing athletic attire" class="credibility-image" loading="lazy">
         </div>
         <div>
             <p class="credibility-text">I'm Christen. I spent 7 seasons as a WNBA strength coach.</p>
@@ -536,16 +598,16 @@ h2 {font-size:2.5rem; margin-bottom:30px; font-weight:800; text-transform:upperc
     <p class="subtitle">Women's sports fans from all walks of life. One shared goal: getting strong.</p>
     <div class="members-grid">
         <figure class="member-card">
-            <img src="IMG_9145.jpg" alt="Bethany, 37 year old semi-pro soccer player and co-founder of Austin Rise FC, introducing herself to the Sports Bra Strength community">
+            <img src="IMG_9145.jpg" alt="Bethany, 37 year old semi-pro soccer player and co-founder of Austin Rise FC, introducing herself to the Sports Bra Strength community" loading="lazy">
         </figure>
         <figure class="member-card">
-            <img src="IMG_9144.jpg" alt="Jennifer, 48 year old retired triathlete and nurse practitioner, introducing herself to the Sports Bra Strength community">
+            <img src="IMG_9144.jpg" alt="Jennifer, 48 year old retired triathlete and nurse practitioner, introducing herself to the Sports Bra Strength community" loading="lazy">
         </figure>
         <figure class="member-card">
-            <img src="IMG_9141.jpg" alt="Galen, 51 year old fisheries scientist and former triathlete, introducing herself to the Sports Bra Strength community">
+            <img src="IMG_9141.jpg" alt="Galen, 51 year old fisheries scientist and former triathlete, introducing herself to the Sports Bra Strength community" loading="lazy">
         </figure>
         <figure class="member-card">
-            <img src="IMG_9137.jpg" alt="Ritika, 25 year old medical supply coordinator, UConn fan and Dream supporter, introducing herself to the Sports Bra Strength community">
+            <img src="IMG_9137.jpg" alt="Ritika, 25 year old medical supply coordinator, UConn fan and Dream supporter, introducing herself to the Sports Bra Strength community" loading="lazy">
         </figure>
     </div>
 </section>
@@ -556,13 +618,13 @@ h2 {font-size:2.5rem; margin-bottom:30px; font-weight:800; text-transform:upperc
     <p class="subtitle">Members crushing workouts, celebrating milestones, talking games.</p>
     <div class="activity-grid">
         <figure class="activity-card">
-            <img src="IMG_9133.jpg" alt="Community member celebrating lifting a Bison milestone - over 3500 pounds total volume in their workout">
+            <img src="IMG_9133.jpg" alt="Community member celebrating lifting a Bison milestone - over 3500 pounds total volume in their workout" loading="lazy">
         </figure>
         <figure class="activity-card">
-            <img src="IMG_9138.jpg" alt="Community member sharing they completed their workout while watching Unrivaled women's basketball">
+            <img src="IMG_9138.jpg" alt="Community member sharing they completed their workout while watching Unrivaled women's basketball" loading="lazy">
         </figure>
         <figure class="activity-card">
-            <img src="IMG_9131.jpg" alt="Community member celebrating lifting an African Elephant - over 8800 pounds in their workout">
+            <img src="IMG_9131.jpg" alt="Community member celebrating lifting an African Elephant - over 8800 pounds in their workout" loading="lazy">
         </figure>
     </div>
 </section>
