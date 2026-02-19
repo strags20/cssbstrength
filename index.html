@@ -57,6 +57,13 @@
   "offers": [
     {
       "@type": "Offer",
+      "name": "Monthly Membership",
+      "price": "69",
+      "priceCurrency": "USD",
+      "description": "12-week strength program billed monthly, 3-month minimum commitment"
+    },
+    {
+      "@type": "Offer",
       "name": "Quarterly Membership",
       "price": "179",
       "priceCurrency": "USD",
@@ -65,9 +72,9 @@
     {
       "@type": "Offer",
       "name": "Annual Membership",
-      "price": "599",
+      "price": "549",
       "priceCurrency": "USD",
-      "description": "12-week strength program billed annually"
+      "description": "12-week strength program billed annually, save $279 vs monthly"
     }
   ]
 }
@@ -304,7 +311,7 @@ h2 {font-size:2.5rem; margin-bottom:30px; font-weight:800; text-transform:upperc
 
 /* Pricing */
 .pricing-section {background:#f5f5f5; padding:60px 20px;}
-.pricing-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:40px; margin-top:40px; max-width:1000px; margin-left:auto; margin-right:auto;}
+.pricing-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; margin-top:40px; max-width:1100px; margin-left:auto; margin-right:auto;}
 .pricing-card {background:white; border:3px solid #1e3a5f; padding:40px; text-align:center; transition:all 0.3s; border-radius:8px;}
 .pricing-card:hover {transform:translateY(-5px); box-shadow:0 10px 30px rgba(0,0,0,0.15);}
 .pricing-card.featured {border-color:#DAA520; border-width:4px; position:relative;}
@@ -580,32 +587,45 @@ h2 {font-size:2.5rem; margin-bottom:30px; font-weight:800; text-transform:upperc
     <h2 id="pricing-heading">Join Sports Bra Strength</h2>
     <div class="pricing-grid">
         <article class="pricing-card">
+            <h3>Monthly</h3>
+            <div class="price" aria-label="69 dollars per month">$69<span class="price-period">/month</span></div>
+            <p class="pricing-subtext">3-month minimum commitment</p>
+            <ul class="features-list" role="list">
+                <li role="listitem">12-week strength program</li>
+                <li role="listitem">Training app with direct messaging</li>
+                <li role="listitem">Private in-app community</li>
+                <li role="listitem">Monthly support &amp; content</li>
+                <li role="listitem">Billed monthly (3-mo. min.)</li>
+            </ul>
+            <a href="#" class="buy-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Monthly'});" aria-label="Join Sports Bra Strength monthly membership for 69 dollars per month, 3-month minimum">Join for $69/Month</a>
+        </article>
+        <article class="pricing-card featured">
+            <div class="pricing-badge" role="note">Best Value</div>
             <h3>Quarterly</h3>
-            <div class="price" aria-label="179 dollars per quarter">$179<span class="price-period">/quarterly</span></div>
+            <div class="price" aria-label="179 dollars per quarter">$179<span class="price-period">/quarter</span></div>
             <p class="pricing-subtext">Billed every 3 months</p>
             <ul class="features-list" role="list">
                 <li role="listitem">12-week strength program</li>
                 <li role="listitem">Training app with direct messaging</li>
                 <li role="listitem">Private in-app community</li>
-                <li role="listitem">Monthly support & content</li>
-                <li role="listitem">Cancel anytime</li>
+                <li role="listitem">Monthly support &amp; content</li>
+                <li role="listitem">Save vs. monthly billing</li>
             </ul>
-            <a href="https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V" class="buy-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Quarterly'});" aria-label="Join Sports Bra Strength quarterly membership for 179 dollars every 3 months">Join for $179/Quarterly</a>
+            <a href="https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V" class="buy-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Quarterly'});" aria-label="Join Sports Bra Strength quarterly membership for 179 dollars every 3 months">Join for $179/Quarter</a>
         </article>
-        <article class="pricing-card featured">
-            <div class="pricing-badge" role="note">Best Value - Save Over $100</div>
+        <article class="pricing-card">
             <h3>Annual</h3>
-            <div class="price" aria-label="599 dollars per year">$599<span class="price-period">/annually</span></div>
-            <p class="pricing-subtext">Save over $100 vs quarterly</p>
+            <div class="price" aria-label="549 dollars per year">$549<span class="price-period">/year</span></div>
+            <p class="pricing-subtext">Save $279 vs monthly</p>
             <ul class="features-list" role="list">
                 <li role="listitem">12-week strength program</li>
                 <li role="listitem">Full year app access</li>
+                <li role="listitem">Training app with direct messaging</li>
                 <li role="listitem">Private in-app community</li>
-                <li role="listitem">Monthly support & content</li>
+                <li role="listitem">Monthly support &amp; content</li>
                 <li role="listitem">New cycles every quarter</li>
-                <li role="listitem">Save over $100 vs quarterly</li>
             </ul>
-            <a href="https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X" class="buy-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Annual'});" aria-label="Join Sports Bra Strength annual membership for 599 dollars per year">Join for $599/Annually</a>
+            <a href="https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X" class="buy-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Join Annual'});" aria-label="Join Sports Bra Strength annual membership for 549 dollars per year">Join for $549/Annually</a>
         </article>
     </div>
 </section>
@@ -673,8 +693,9 @@ h2 {font-size:2.5rem; margin-bottom:30px; font-weight:800; text-transform:upperc
     <h2>Ready to Get Strong Like Your Favorite Athletes?</h2>
     <p>Join other women's sports fans already getting stronger in the lifting club.</p>
     <p class="big">Stop guessing. Start building.</p>
-    <a href="https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V" class="cta-button" aria-label="Join quarterly membership for 179 dollars every 3 months">Join for $179/Quarterly</a>
-    <a href="https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X" class="cta-button" aria-label="Join annual membership for 599 dollars per year">Join for $599/Annually</a>
+    <a href="#" class="cta-button" aria-label="Join monthly membership for 69 dollars per month, 3-month minimum">Join for $69/Month</a>
+    <a href="https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V" class="cta-button" aria-label="Join quarterly membership for 179 dollars every 3 months (best value)">Join for $179/Quarterly</a>
+    <a href="https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X" class="cta-button" aria-label="Join annual membership for 549 dollars per year">Join for $549/Annually</a>
 </footer>
 
 <script>
