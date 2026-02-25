@@ -535,6 +535,25 @@ h2 {
 }
 .mini-cred-text strong { color: #DAA520; }
 .mini-credibility .text-link { color: #DAA520; }
+
+/* =============================================
+   COMMUNITY TEASER (Home page)
+   ============================================= */
+.community-teaser {
+  background: #800020;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+.community-teaser h2 { color: white; margin-bottom: 15px; }
+.community-teaser p {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 620px;
+  margin: 0 auto 35px;
+  line-height: 1.7;
+}
+
 .text-link {
   color: #800020;
   font-weight: 700;
