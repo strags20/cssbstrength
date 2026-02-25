@@ -102,6 +102,23 @@ a:focus, button:focus, .faq-question:focus {
   color: #fff;
 }
 
+/* Always-visible Join Now button in nav */
+.nav-join-btn {
+  background: #DAA520;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+.nav-join-btn:hover {
+  background: #fff;
+  color: #1e3a5f;
+}
+
 /* Hamburger toggle */
 .nav-toggle {
   display: none;
@@ -178,6 +195,264 @@ a:focus, button:focus, .faq-question:focus {
   background: #fff;
   color: #1e3a5f;
   transform: scale(1.05);
+}
+.hero-trust {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.75);
+  margin-top: 14px;
+  letter-spacing: 0.3px;
+}
+.hero-members {
+  font-size: 1rem;
+  color: #DAA520;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* =============================================
+   PROOF SECTION
+   ============================================= */
+.proof-section {
+  background: #1a1a1a;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+.proof-section h2 { color: #DAA520; margin-bottom: 20px; }
+.proof-lead {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.proof-quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 820px;
+  margin: 0 auto 30px;
+  border-left: 4px solid #DAA520;
+  padding-left: 25px;
+  text-align: left;
+}
+.proof-section--light {
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+.proof-section--light h2 { color: #1a1a1a; }
+.proof-quote--dark {
+  color: #333;
+  border-left-color: #800020;
+}
+.guarantee-callout {
+  margin-top: 10px;
+}
+.guarantee-callout .text-link {
+  color: #DAA520;
+}
+
+/* =============================================
+   TEST / RETEST SECTION
+   ============================================= */
+.test-retest-section {
+  background: #f5f5f5;
+  padding: 70px 20px;
+}
+.test-retest-section h2 { color: #1a1a1a; margin-bottom: 30px; }
+.test-retest-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.methodology-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.methodology-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+.methodology-step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #800020;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.methodology-step strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.methodology-step p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =============================================
+   GUARANTEE SECTION
+   ============================================= */
+.guarantee-section {
+  background: #800020;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+.guarantee-section h2 { color: white; margin-bottom: 30px; }
+.guarantee-box {
+  background: rgba(255,255,255,0.12);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.guarantee-box p {
+  font-size: 1.35rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+.guarantee-box p:last-child { margin-bottom: 0; }
+
+/* =============================================
+   APP SCREENSHOTS
+   ============================================= */
+.app-screenshots-section {
+  background: #1a1a1a;
+  padding: 70px 20px;
+  color: white;
+}
+.app-screenshots-section h2 { color: #DAA520; margin-bottom: 15px; }
+.app-screenshots-section .subtitle {
+  text-align: center;
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.screenshot-card {
+  background: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0;
+}
+.screenshot-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =============================================
+   EMAIL CAPTURE
+   ============================================= */
+.email-capture-section {
+  background: #f5f5f5;
+  padding: 70px 20px;
+  text-align: center;
+}
+.email-capture-section h2 { color: #1a1a1a; margin-bottom: 15px; }
+.email-capture-section p {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+.email-capture-form {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.email-capture-form input[type="email"] {
+  flex: 1;
+  min-width: 240px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+.email-capture-form input[type="email"]:focus {
+  border-color: #DAA520;
+}
+.email-capture-form button {
+  background: #DAA520;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.email-capture-form button:hover {
+  background: #800020;
+  color: white;
+}
+.email-capture-form button:focus {
+  outline: 3px solid #DAA520;
+  outline-offset: 2px;
+}
+
+/* =============================================
+   COMMUNITY POSTS SECTION (sneakers + sports talk)
+   ============================================= */
+.community-posts-section {
+  background: #fff;
+  padding: 70px 20px;
+}
+.community-posts-section h2 { color: #1a1a1a; margin-bottom: 10px; }
+.community-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+.community-post-card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid #e0e0e0;
+}
+.community-post-card img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* =============================================
@@ -770,6 +1045,7 @@ h2 {
    ============================================= */
 @media (max-width: 768px) {
   /* Nav mobile */
+  .nav-container { justify-content: space-between; }
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
@@ -842,4 +1118,29 @@ h2 {
 
   /* FAQ mobile */
   .faq-question { font-size: 1.05rem; padding: 15px 20px; }
+
+  /* Nav join button mobile */
+  .nav-join-btn { font-size: 0.8rem; padding: 7px 12px; }
+
+  /* Proof section mobile */
+  .proof-quote { font-size: 1.1rem; padding-left: 15px; }
+
+  /* Methodology steps mobile */
+  .methodology-steps { grid-template-columns: 1fr; }
+  .methodology-text { font-size: 1.1rem; }
+
+  /* Guarantee box mobile */
+  .guarantee-box { padding: 25px 20px; }
+  .guarantee-box p { font-size: 1.15rem; }
+
+  /* Screenshots grid mobile */
+  .screenshots-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Email capture mobile */
+  .email-capture-form { flex-direction: column; align-items: center; }
+  .email-capture-form input[type="email"] { width: 100%; }
+  .email-capture-form button { width: 100%; }
+
+  /* Hero members mobile */
+  .hero-members { font-size: 0.9rem; }
 }
