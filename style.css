@@ -1041,6 +1041,100 @@ h2 {
 }
 
 /* =============================================
+   STAT CALLOUT CARDS
+   ============================================= */
+.stat-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 30px auto 0;
+}
+.stat-card {
+  background: rgba(255,255,255,0.08);
+  border: 2px solid #DAA520;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+}
+.stat-card .stat-before {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #888;
+  display: block;
+  line-height: 1;
+}
+.stat-card .stat-arrow {
+  font-size: 1.8rem;
+  color: #DAA520;
+  display: block;
+  margin: 8px 0;
+  line-height: 1;
+}
+.stat-card .stat-after {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #DAA520;
+  display: block;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.stat-card .stat-lift {
+  font-size: 0.9rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+/* =============================================
+   DARK TRAINING SPLIT SECTION
+   ============================================= */
+.test-retest-section--dark {
+  background: #1a1a1a;
+}
+.test-retest-section--dark h2 { color: #DAA520; }
+.test-retest-section--dark .methodology-text { color: #ddd; }
+
+/* =============================================
+   WORKOUT HISTORY SECTION (dark bg, image L / text R)
+   ============================================= */
+.workout-history-section {
+  background: #222;
+  padding: 70px 20px;
+  color: white;
+  text-align: center;
+}
+.workout-history-section h2 { color: #DAA520; margin-bottom: 40px; }
+.workout-history-section .credibility-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.workout-history-section .credibility-text { color: #ddd; }
+
+/* =============================================
+   GRAPH SECTION (different bg, text L / image R)
+   ============================================= */
+.graph-section {
+  background: #f0f4f8;
+  padding: 70px 20px;
+  color: #1a1a1a;
+  text-align: center;
+}
+.graph-section h2 { color: #1a1a1a; margin-bottom: 40px; }
+.graph-section .credibility-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.graph-section .credibility-text { color: #333; }
+.graph-section .credibility-image { border-color: #800020; }
+
+/* Reversed credibility grid — text (2fr) left, image (1fr) right */
+.credibility-content--reversed {
+  grid-template-columns: 2fr 1fr;
+}
+
+/* =============================================
    MOBILE RESPONSIVE
    ============================================= */
 @media (max-width: 768px) {
@@ -1143,4 +1237,12 @@ h2 {
 
   /* Hero members mobile */
   .hero-members { font-size: 0.9rem; }
+
+  /* Stat cards mobile */
+  .stat-cards-grid { grid-template-columns: 1fr; }
+
+  /* Workout history / graph mobile — stack to single column */
+  .workout-history-section .credibility-content,
+  .graph-section .credibility-content,
+  .credibility-content--reversed { grid-template-columns: 1fr; }
 }
