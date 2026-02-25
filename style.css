@@ -498,12 +498,12 @@ h2 {
    MINI CREDIBILITY (Home page)
    ============================================= */
 .mini-credibility {
-  background: #1a1a1a;
-  color: white;
+  background: #ffffff;
+  color: #1a1a1a;
   padding: 70px 20px;
   text-align: center;
 }
-.mini-credibility h2 { color: #DAA520; margin-bottom: 40px; }
+.mini-credibility h2 { color: #800020; margin-bottom: 40px; }
 .mini-cred-content {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -525,16 +525,16 @@ h2 {
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 16px;
-  color: #ddd;
+  color: #333;
 }
-.mini-cred-text strong { color: #DAA520; }
+.mini-cred-text strong { color: #800020; }
 .text-link {
-  color: #DAA520;
+  color: #800020;
   font-weight: 700;
   text-decoration: underline;
   transition: color 0.2s;
 }
-.text-link:hover { color: #fff; }
+.text-link:hover { color: #1a1a1a; }
 
 /* =============================================
    PROBLEM SECTION
