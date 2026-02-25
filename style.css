@@ -542,8 +542,8 @@ h2 {
    COMMUNITY TEASER (Home page)
    ============================================= */
 .community-teaser {
-  background: #800020;
-  color: white;
+  background: white;
+  color: #1a1a1a;
   padding: 70px 20px;
   text-align: center;
 }
