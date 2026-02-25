@@ -444,8 +444,8 @@ a:focus, button:focus, .faq-question:focus {
 .community-posts-section .subtitle { color: rgba(255,255,255,0.85); }
 .chat-mosaic {
   columns: 4;
-  column-gap: 10px;
-  max-width: 1100px;
+  column-gap: 12px;
+  max-width: 1350px;
   margin: 40px auto 0;
   padding: 0 20px;
 }
@@ -1061,8 +1061,8 @@ h2 {
 .intros-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  max-width: 1200px;
+  gap: 16px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
 }
