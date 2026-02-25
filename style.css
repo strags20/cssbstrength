@@ -445,7 +445,7 @@ a:focus, button:focus, .faq-question:focus {
 .chat-mosaic {
   columns: 3;
   column-gap: 14px;
-  max-width: 1100px;
+  max-width: 1600px;
   margin: 40px auto 0;
 }
 .chat-mosaic figure {
@@ -535,6 +535,25 @@ h2 {
 }
 .mini-cred-text strong { color: #DAA520; }
 .mini-credibility .text-link { color: #DAA520; }
+
+/* =============================================
+   COMMUNITY TEASER (Home page)
+   ============================================= */
+.community-teaser {
+  background: #800020;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+.community-teaser h2 { color: white; margin-bottom: 15px; }
+.community-teaser p {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 620px;
+  margin: 0 auto 35px;
+  line-height: 1.7;
+}
+
 .text-link {
   color: #800020;
   font-weight: 700;
@@ -993,6 +1012,41 @@ h2 {
 }
 
 /* =============================================
+   STANDALONE PULL QUOTE
+   ============================================= */
+.standalone-quote {
+  background: #fff;
+  padding: 70px 40px;
+  text-align: center;
+}
+.standalone-quote blockquote {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 1.45rem;
+  font-style: italic;
+  line-height: 1.85;
+  color: #1a1a1a;
+  border: none;
+  padding: 0;
+}
+.standalone-quote blockquote::before {
+  content: '\201C';
+  display: block;
+  font-size: 5rem;
+  line-height: 1;
+  color: #800020;
+  margin-bottom: -10px;
+  font-style: normal;
+}
+.standalone-quote .quote-author {
+  margin-top: 28px;
+  font-weight: 700;
+  color: #800020;
+  font-size: 1.05rem;
+  font-style: normal;
+}
+
+/* =============================================
    MEMBER INTROS SECTION
    ============================================= */
 .member-intros-section {
@@ -1004,9 +1058,9 @@ h2 {
 .member-intros-section h2 { color: #DAA520; margin-bottom: 40px; }
 .intros-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 1000px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 .intro-photo-card {
@@ -1293,6 +1347,6 @@ h2 {
 
   /* Community mobile */
   .chat-mosaic { columns: 2; }
-  .intros-grid { grid-template-columns: 1fr; }
+  .intros-grid { grid-template-columns: repeat(2, 1fr); }
   .community-posts-section { padding-bottom: 70px; }
 }
