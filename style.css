@@ -442,34 +442,20 @@ a:focus, button:focus, .faq-question:focus {
 }
 .community-posts-section h2 { color: white; margin-bottom: 10px; }
 .community-posts-section .subtitle { color: rgba(255,255,255,0.85); }
-.community-posts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.chat-mosaic {
+  columns: 3;
+  column-gap: 14px;
   max-width: 1100px;
   margin: 40px auto 0;
-  align-items: start;
 }
-.community-post-center {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.poll-context-text {
-  text-align: center;
-  font-size: 1rem;
-  color: rgba(255,255,255,0.9);
-  font-style: italic;
-  line-height: 1.6;
-}
-.community-post-card {
-  background: #f5f5f5;
-  border-radius: 8px;
+.chat-mosaic figure {
+  break-inside: avoid;
+  margin: 0 0 14px 0;
+  border-radius: 10px;
   overflow: hidden;
-  margin: 0;
-  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
 }
-.community-post-card img {
+.chat-mosaic figure img {
   width: 100%;
   height: auto;
   display: block;
@@ -1306,7 +1292,7 @@ h2 {
   .credibility-content--reversed { grid-template-columns: 1fr; }
 
   /* Community mobile */
-  .community-posts-grid { grid-template-columns: 1fr; }
+  .chat-mosaic { columns: 2; }
   .intros-grid { grid-template-columns: 1fr; }
   .community-posts-section { padding-bottom: 70px; }
 }
