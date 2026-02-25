@@ -179,6 +179,12 @@ a:focus, button:focus, .faq-question:focus {
   color: #1e3a5f;
   transform: scale(1.05);
 }
+.hero-trust {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.75);
+  margin-top: 14px;
+  letter-spacing: 0.3px;
+}
 
 /* =============================================
    PAGE HEADER (inner pages)
