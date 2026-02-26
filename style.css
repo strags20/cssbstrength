@@ -997,8 +997,7 @@ h2 {
 }
 .testimonial-photos img {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
 }
 .testimonials-section { background: #fff; padding: 70px 20px; text-align: center; }
