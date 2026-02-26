@@ -994,7 +994,6 @@ h2 {
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  border: 3px solid #DAA520;
 }
 .testimonials-section { background: #fff; padding: 70px 20px; text-align: center; }
 .testimonials-grid {
@@ -1366,5 +1365,6 @@ h2 {
   /* Community mobile */
   .chat-mosaic { columns: 2; padding: 0 12px; }
   .intros-grid { grid-template-columns: repeat(2, 1fr); }
+  .intro-photo-card img { aspect-ratio: 9/16; object-fit: cover; }
   .community-posts-section { padding-bottom: 70px; }
 }
