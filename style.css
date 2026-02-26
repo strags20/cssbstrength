@@ -142,17 +142,31 @@ a:focus, button:focus, .faq-question:focus {
 /* =============================================
    VIDEO CONTAINER
    ============================================= */
-.video-container {
-  max-width: 800px;
-  margin: 0 auto 40px;
-  background: #000;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.video-container video {
+.hero-image {
+  display: block;
+  max-width: 700px;
   width: 100%;
   height: auto;
-  display: block;
+  margin: 0 auto 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #DAA520;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+.hero-stats-divider {
+  color: rgba(255,255,255,0.4);
+  font-weight: 300;
 }
 
 /* =============================================
