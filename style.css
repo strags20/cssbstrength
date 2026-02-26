@@ -1103,8 +1103,7 @@ h2 {
 }
 .intro-photo-card img {
   width: 100%;
-  aspect-ratio: 9/16;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
@@ -1329,7 +1328,7 @@ h2 {
   .testimonial { padding: 40px 20px; margin: 40px 20px; }
   .testimonial-text { font-size: 1.15rem; }
   .testimonial-photos { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
-  .testimonial-photos img { width: 100% !important; aspect-ratio: 1/1 !important; object-fit: cover !important; height: auto !important; }
+  .testimonial-photos img { width: 100% !important; height: auto !important; }
 
   /* Grids mobile */
   .what-you-get-grid { grid-template-columns: 1fr; }
@@ -1382,7 +1381,6 @@ h2 {
   /* Community mobile */
   .chat-mosaic { columns: 2; padding: 0 12px; }
   .intros-grid { grid-template-columns: repeat(2, 1fr); }
-  .intro-photo-card img { aspect-ratio: 9/16; object-fit: cover; }
   .community-posts-section { padding-bottom: 70px; }
 }
 
