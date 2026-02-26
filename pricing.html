@@ -54,32 +54,54 @@
   "@type": "ProfessionalService",
   "name": "Sports Bra Strength",
   "url": "https://www.sportsbrastrength.com",
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "Monthly Membership",
-      "price": "69",
-      "priceCurrency": "USD",
-      "description": "12-week strength program billed monthly, 3-month minimum commitment",
-      "url": "https://buy.stripe.com/28E14mdkPfpdgqm8Bg0RG0Y"
-    },
-    {
-      "@type": "Offer",
-      "name": "Quarterly Membership",
-      "price": "179",
-      "priceCurrency": "USD",
-      "description": "12-week strength program billed every 3 months",
-      "url": "https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V"
-    },
-    {
-      "@type": "Offer",
-      "name": "Annual Membership",
-      "price": "599",
-      "priceCurrency": "USD",
-      "description": "12-week strength program billed annually, save $229 vs monthly",
-      "url": "https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X"
-    }
-  ]
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Sports Bra Strength Membership Plans",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Monthly Membership",
+        "price": "69",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "69",
+          "priceCurrency": "USD",
+          "unitCode": "MON"
+        },
+        "description": "12-week strength program billed monthly",
+        "url": "https://buy.stripe.com/28E14mdkPfpdgqm8Bg0RG0Y"
+      },
+      {
+        "@type": "Offer",
+        "name": "Quarterly Membership",
+        "price": "179",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "179",
+          "priceCurrency": "USD",
+          "unitCode": "QUA"
+        },
+        "description": "12-week strength program billed every 3 months — best value",
+        "url": "https://buy.stripe.com/4gM6oG2Gbdh54HE04K0RG0V"
+      },
+      {
+        "@type": "Offer",
+        "name": "Annual Membership",
+        "price": "599",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "599",
+          "priceCurrency": "USD",
+          "unitCode": "ANN"
+        },
+        "description": "12-week strength program billed annually — save $229 (27%) vs monthly",
+        "url": "https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X"
+      }
+    ]
+  }
 }
 </script>
 </head>
@@ -115,6 +137,21 @@
 <!-- MAIN CONTENT -->
 <main id="main-content">
 
+<!-- GUARANTEE (above pricing to reduce friction) -->
+<section class="guarantee-section" aria-labelledby="pricing-guarantee-heading">
+  <h2 id="pricing-guarantee-heading">The Full Season Guarantee</h2>
+  <div class="guarantee-box">
+    <p>36 Workouts. 3 Workouts Per Week × 12 Weeks.</p>
+    <p>Complete the full season, retest your starting lifts, and if you aren't stronger than when you began — I'll refund you in full.</p>
+  </div>
+  <p style="margin-top:35px; font-size:1.05rem; color:#ccc; line-height:1.8;">
+    Questions before joining? <a href="workouts.html" style="color:#DAA520; font-weight:700;">Read the full program details →</a>
+  </p>
+  <p style="font-size:1rem; color:#aaa; line-height:1.7; margin-top:8px;">
+    Cancel anytime — just email <a href="mailto:info@christenstrags.com" style="color:#DAA520;">info@christenstrags.com</a>. No hoops, no hassle.
+  </p>
+</section>
+
 <!-- PRICING TIERS -->
 <section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
   <h2 id="pricing-heading" class="sr-only">Membership Tiers</h2>
@@ -123,7 +160,7 @@
     <article class="pricing-card">
       <h3>Monthly</h3>
       <div class="price" aria-label="69 dollars per month">$69<span class="price-period">/month</span></div>
-      <p class="pricing-subtext">3-month minimum commitment</p>
+      <p class="pricing-subtext">Start at $69/month, billed monthly</p>
       <ul class="features-list" role="list">
         <li role="listitem">12-week strength program</li>
         <li role="listitem">Training app with direct messaging</li>
@@ -165,7 +202,7 @@
       <div class="pricing-badge" role="note">Biggest Savings</div>
       <h3>Annual</h3>
       <div class="price" aria-label="599 dollars per year">$599<span class="price-period">/year</span></div>
-      <p class="pricing-subtext">Save $229 vs monthly</p>
+      <p class="pricing-subtext">Save $229 (27%) vs monthly</p>
       <ul class="features-list" role="list">
         <li role="listitem">12-week strength program</li>
         <li role="listitem">Full year app access</li>
@@ -185,21 +222,6 @@
   </div>
 </section>
 
-<!-- GUARANTEE -->
-<section class="guarantee-section" aria-labelledby="pricing-guarantee-heading">
-  <h2 id="pricing-guarantee-heading">The Full Season Guarantee</h2>
-  <div class="guarantee-box">
-    <p>36 Workouts. 3 Workouts Per Week × 12 Weeks.</p>
-    <p>Complete the full season, retest your starting lifts, and if you aren't stronger than when you began — I'll refund you in full.</p>
-  </div>
-  <p style="margin-top:35px; font-size:1.05rem; color:#ccc; line-height:1.8;">
-    Questions before joining? <a href="workouts.html" style="color:#DAA520; font-weight:700;">Read the full program details →</a>
-  </p>
-  <p style="font-size:1rem; color:#aaa; line-height:1.7; margin-top:8px;">
-    Cancel anytime — just email <a href="mailto:info@christenstrags.com" style="color:#DAA520;">info@christenstrags.com</a>. No hoops, no hassle.
-  </p>
-</section>
-
 </main>
 
 <!-- FOOTER -->
@@ -208,7 +230,8 @@
   <p>Join WNBA, Unrivaled, PWHL, and NWSL fans already getting stronger in the lifting club.</p>
   <p class="big">Stop guessing. Start building.</p>
   <div class="cta-group">
-    <a href="#pricing" class="cta-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Footer CTA - Pricing'});" aria-label="See membership options and join Sports Bra Strength">Join Sports Bra Strength →</a>
+    <a href="https://buy.stripe.com/14A4gy1C7fpd5LIcRw0RG0X" class="cta-button" onclick="gtag('event','click',{event_category:'Button', event_label:'Footer CTA - Annual'});" aria-label="Join Sports Bra Strength annual membership for 599 dollars per year — save 27%">Join Annual — $599/Year (Save 27%) →</a>
+    <a href="#pricing" class="cta-button" style="background:#1e3a5f; color:#fff; margin-top:12px;" onclick="gtag('event','click',{event_category:'Button', event_label:'Footer CTA - Pricing'});" aria-label="See all membership options">See All Plans →</a>
   </div>
 </footer>
 
