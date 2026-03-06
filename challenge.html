@@ -23,11 +23,13 @@
     }
     body { font-family: 'Barlow', sans-serif; background: var(--white); color: var(--text); line-height: 1.6; overflow-x: hidden; }
     /* NAV */
-    nav { background: var(--maroon-dark); padding: 16px 48px; display: flex; align-items: center; justify-content: space-between; }
+    nav { background: var(--maroon-dark); padding: 16px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
     nav .logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--white); letter-spacing: 3px; text-decoration: none; }
     nav ul { list-style: none; display: flex; gap: 32px; }
     nav ul a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; transition: color 0.2s; }
     nav ul a:hover, nav ul a.active { color: var(--gold); }
+    .nav-toggle-ch { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-toggle-ch span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; }
     /* HERO */
     .hero {
       background: linear-gradient(145deg, var(--maroon-light) 0%, var(--maroon) 40%, var(--maroon-dark) 100%);
@@ -243,21 +245,33 @@
     footer { background: var(--maroon-dark); padding: 28px 48px; text-align: center; font-size: 11px; color: rgba(255,255,255,0.3); }
     footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
     @media (max-width: 768px) {
-      nav ul { display: none; }
+      nav { padding: 16px 24px; }
+      nav ul { display: none; flex-direction: column; gap: 0; width: 100%; padding: 12px 0 4px; }
+      nav ul.open { display: flex; }
+      nav ul li a { display: block; padding: 10px 0; font-size: 13px; }
+      .nav-toggle-ch { display: flex; }
       .hero, .hiw, .mechanic, .rounds, .sendoff, .pricing, .timeline-sec, .cta { padding: 64px 24px; }
       .steps, .paths, .rounds-grid, .pricing-cards { grid-template-columns: 1fr; }
       .sendoff-inner { flex-direction: column; }
       .stats { flex-wrap: wrap; }
       .stat { padding: 16px 24px; }
+      .brag-strip { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .brag-right { width: 100%; }
+      .brag-pill { white-space: normal; }
     }
   </style>
 </head>
 <body>
   <nav>
     <a href="index.html" class="logo">Sports Bra Strength</a>
+    <button class="nav-toggle-ch" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="workouts.html">Workouts</a></li>
+      <li><a href="community.html">Community</a></li>
       <li><a href="challenge.html" class="active">Challenge</a></li>
       <li><a href="pricing.html">Pricing</a></li>
     </ul>
@@ -538,5 +552,18 @@
   <footer>
     <p>© 2026 Sports Bra Strength &nbsp;·&nbsp; Strags Performance Training &nbsp;·&nbsp; San Antonio, TX &nbsp;·&nbsp; <a href="terms.html">Terms of Service</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:info@christenstrags.com">info@christenstrags.com</a> &nbsp;·&nbsp; Open to US residents 18+</p>
   </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.querySelector('.nav-toggle-ch');
+  const menu = document.querySelector('nav ul');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function() {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('open');
+    });
+  }
+});
+</script>
 </body>
 </html>
