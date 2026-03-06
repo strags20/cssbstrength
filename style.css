@@ -65,12 +65,21 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   height: 70px;
 }
+.nav-logo-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo-text:hover { color: #DAA520; }
 .nav-logo {
   display: flex;
   align-items: center;
