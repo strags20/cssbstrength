@@ -520,13 +520,13 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    ============================================= */
 .section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
 h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-family: 'Barlow', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   margin-bottom: 30px;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 0.95;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
   text-align: center;
 }
 .section-dark { background: #1a1a1a; color: white; }
@@ -1160,7 +1160,7 @@ h2 {
   text-align: center;
   padding: 70px 20px;
 }
-.footer-cta h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: 3px; line-height: 0.95; margin-bottom: 20px; color: white; }
+.footer-cta h2 { font-family: 'Barlow', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); letter-spacing: 0.5px; line-height: 1.1; font-weight: 800; margin-bottom: 20px; color: white; }
 .footer-cta p { font-size: 1.2rem; margin-bottom: 15px; line-height: 1.6; }
 .footer-cta .big {
   font-size: 1.4rem;
@@ -1334,7 +1334,7 @@ h2 {
 
   /* Section mobile */
   .section { padding: 40px 15px; }
-  h2 { font-size: 2.2rem; }
+  h2 { font-size: 1.7rem; }
 
   /* Testimonial mobile */
   .testimonial { padding: 40px 20px; margin: 40px 20px; }
@@ -1351,7 +1351,7 @@ h2 {
   .highlights-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* Footer mobile */
-  .footer-cta h2 { font-size: 2.4rem; }
+  .footer-cta h2 { font-size: 1.7rem; }
   .footer-cta p { font-size: 1.1rem; }
 
   /* FAQ mobile */
