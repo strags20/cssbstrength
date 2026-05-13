@@ -356,8 +356,21 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
 
 .hiw-steps {
   grid-template-columns: 1fr;
-  max-width: 760px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 50px auto 0;
+  gap: 0;
+}
+
+.hiw-steps .methodology-step {
+  background: none;
+  box-shadow: none;
+  border-top: 1px solid #e5e0d8;
+  border-radius: 0;
+  padding: 32px 0;
+}
+
+.hiw-steps .methodology-step:last-child {
+  border-bottom: 1px solid #e5e0d8;
 }
 
 /* =============================================
