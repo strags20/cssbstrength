@@ -1232,6 +1232,13 @@ h2 {
   font-weight: 600;
 }
 
+.stat-card .stat-delta {
+  font-size: 0.85rem;
+  color: #c9a84c;
+  font-style: italic;
+  margin-top: 4px;
+}
+
 /* =============================================
    DARK TRAINING SPLIT SECTION
    ============================================= */
