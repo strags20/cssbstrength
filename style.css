@@ -1260,9 +1260,8 @@ h2 {
 }
 
 .cohort-badge {
-  font-family: Arial, sans-serif;
   font-size: 0.65rem;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: #800020;
@@ -1293,8 +1292,7 @@ h2 {
 }
 
 .cohort-sub {
-  font-family: Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: #888;
   margin-bottom: 1.75rem;
 }
@@ -1315,8 +1313,8 @@ h2 {
 }
 
 .results-stat-card .rsc-exercise {
-  font-family: Arial, sans-serif;
   font-size: 0.7rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #888;
@@ -1325,13 +1323,13 @@ h2 {
 
 .results-stat-card .rsc-numbers {
   font-size: 1.2rem;
+  font-weight: 700;
   color: #800020;
   margin-bottom: 0.25rem;
 }
 
 .results-stat-card .rsc-delta {
-  font-family: Arial, sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #888;
 }
 
@@ -1343,9 +1341,8 @@ h2 {
 }
 
 .by-numbers-label {
-  font-family: Arial, sans-serif;
   font-size: 0.65rem;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #888;
@@ -1357,8 +1354,7 @@ h2 {
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
-  font-family: Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   padding: 0.6rem 0;
   border-bottom: 1px solid #e5e0d8;
 }
@@ -1368,9 +1364,8 @@ h2 {
 .bn-right { font-weight: bold; color: #1a1a1a; white-space: nowrap; }
 
 .results-quotes-label {
-  font-family: Arial, sans-serif;
   font-size: 0.65rem;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #888;
@@ -1394,9 +1389,9 @@ h2 {
 }
 
 .results-quote-card .rqc-attr {
-  font-family: Arial, sans-serif;
-  font-size: 0.8rem;
-  color: #888;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #800020;
 }
 
 .results-divider {
