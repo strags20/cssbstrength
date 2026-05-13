@@ -1240,6 +1240,228 @@ h2 {
 }
 
 /* =============================================
+   RESULTS PAGE
+   ============================================= */
+.results-page {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.cohort-section {
+  margin-bottom: 4rem;
+}
+
+.cohort-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cohort-badge {
+  font-family: Arial, sans-serif;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: #800020;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.cohort-badge.upcoming {
+  background: transparent;
+  color: #888;
+  border: 1px solid #ddd;
+}
+
+.cohort-line {
+  flex: 1;
+  height: 1px;
+  background: #e5e0d8;
+}
+
+.cohort-headline {
+  font-size: 1.35rem;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+  color: #1a1a1a;
+}
+
+.cohort-sub {
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 1.75rem;
+}
+
+.results-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: 10px;
+  margin-bottom: 1.75rem;
+}
+
+.results-stat-card {
+  background: #fff;
+  border: 1px solid #e5e0d8;
+  border-top: 3px solid #c9a84c;
+  border-radius: 4px;
+  padding: 1rem 1.1rem;
+}
+
+.results-stat-card .rsc-exercise {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.results-stat-card .rsc-numbers {
+  font-size: 1.2rem;
+  color: #800020;
+  margin-bottom: 0.25rem;
+}
+
+.results-stat-card .rsc-delta {
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.by-numbers {
+  background: #f5f2ed;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.by-numbers-label {
+  font-family: Arial, sans-serif;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.bn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e5e0d8;
+}
+
+.bn-row:last-child { border-bottom: none; }
+.bn-left { color: #555; }
+.bn-right { font-weight: bold; color: #1a1a1a; white-space: nowrap; }
+
+.results-quotes-label {
+  font-family: Arial, sans-serif;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.results-quote-card {
+  background: #fff;
+  border: 1px solid #e5e0d8;
+  border-left: 3px solid #800020;
+  border-radius: 0 4px 4px 0;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.results-quote-card .rqc-text {
+  font-size: 1rem;
+  color: #1a1a1a;
+  line-height: 1.75;
+  margin-bottom: 0.6rem;
+}
+
+.results-quote-card .rqc-attr {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.results-divider {
+  border: none;
+  border-top: 1px solid #e5e0d8;
+  margin: 3rem 0;
+}
+
+.results-coming-soon {
+  border: 1px dashed #e5e0d8;
+  border-radius: 4px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.results-coming-soon p:first-child {
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+}
+
+.results-coming-soon p:last-child {
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.results-cta-block {
+  background: #800020;
+  color: #fff;
+  border-radius: 6px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.results-cta-block h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 0.6rem;
+}
+
+.results-cta-block p {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.5rem;
+}
+
+.results-cta-block .cta-button {
+  background: #c9a84c;
+  color: #1a1a1a;
+  border: none;
+}
+
+.results-cta-block .cta-button:hover {
+  background: #f0d898;
+}
+
+@media (max-width: 600px) {
+  .results-page { padding: 2rem 1rem 4rem; }
+  .results-stat-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* =============================================
    DARK TRAINING SPLIT SECTION
    ============================================= */
 .training-split-section {
