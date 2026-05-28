@@ -200,7 +200,7 @@
     <button id="modal-close" aria-label="Close announcement" style="position:absolute; top:14px; right:18px; background:none; border:none; font-size:1.8rem; cursor:pointer; color:#bbb; line-height:1; font-family:'Barlow',sans-serif;">×</button>
 
     <p style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:2.5px; color:#800020; margin-bottom:12px;">Now Open</p>
-    <h2 id="modal-headline" style="font-family:'Barlow',sans-serif; font-size:clamp(1.3rem,4vw,1.75rem); font-weight:800; color:#1a1a1a; line-height:1.25; margin-bottom:18px; text-transform:uppercase; letter-spacing:0.5px;">Cohort 3 is open — and it comes with a competition.</h2>
+    <h2 id="modal-headline" style="font-family:'Barlow',sans-serif; font-size:clamp(1.3rem,4vw,1.75rem); font-weight:800; color:#1a1a1a; line-height:1.25; margin-bottom:18px; text-transform:uppercase; letter-spacing:0.5px;">June Cohort is open — and it comes with a competition.</h2>
     <p style="font-size:1rem; color:#555; line-height:1.75; margin-bottom:30px;">June members get access to the Commissioner's Cup, a team challenge running June 1–17 where you compete, earn points, and rep your squad. New to SBS? This is the best time to start.</p>
 
     <div style="display:flex; flex-direction:column; gap:12px;">
@@ -254,7 +254,15 @@ document.addEventListener('DOMContentLoaded', function() {
   var emailForm = document.getElementById('modal-email-form');
 
   if (!localStorage.getItem('cohort3-dismissed')) {
-    setTimeout(function() { modal.style.display = 'flex'; }, 900);
+    var modalShown = false;
+    window.addEventListener('scroll', function() {
+      if (modalShown) return;
+      var scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (scrolled >= 0.6) {
+        modalShown = true;
+        modal.style.display = 'flex';
+      }
+    });
   }
 
   function dismissModal() {
