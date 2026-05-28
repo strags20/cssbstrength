@@ -194,6 +194,46 @@
   <p>© 2026 Sports Bra Strength &nbsp;·&nbsp; Strags Performance Training &nbsp;·&nbsp; San Antonio, TX &nbsp;·&nbsp; <a href="terms.html" style="color:rgba(255,255,255,0.45);text-decoration:none;">Terms of Service</a> &nbsp;·&nbsp; <a href="privacy.html" style="color:rgba(255,255,255,0.45);text-decoration:none;">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:info@christenstrags.com" style="color:rgba(255,255,255,0.45);text-decoration:none;">info@christenstrags.com</a></p>
 </div>
 
+<!-- ANNOUNCEMENT MODAL -->
+<div id="announce-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.72); z-index:1000; align-items:center; justify-content:center; padding:20px;" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+  <div style="background:white; border-radius:8px; max-width:520px; width:100%; padding:40px 36px; position:relative; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+    <button id="modal-close" aria-label="Close announcement" style="position:absolute; top:14px; right:18px; background:none; border:none; font-size:1.8rem; cursor:pointer; color:#bbb; line-height:1; font-family:'Barlow',sans-serif;">×</button>
+
+    <p style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:2.5px; color:#800020; margin-bottom:12px;">Now Open</p>
+    <h2 id="modal-headline" style="font-family:'Barlow',sans-serif; font-size:clamp(1.3rem,4vw,1.75rem); font-weight:800; color:#1a1a1a; line-height:1.25; margin-bottom:18px; text-transform:uppercase; letter-spacing:0.5px;">June Cohort is open — and it comes with a competition.</h2>
+    <p style="font-size:1rem; color:#555; line-height:1.75; margin-bottom:30px;">June members get access to the Commissioner's Cup, a team challenge running June 1–17 where you compete, earn points, and rep your squad. New to SBS? This is the best time to start.</p>
+
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <a href="pricing.html" class="cta-button" style="display:block; text-align:center;">Join Now →</a>
+      <button id="modal-email-toggle" style="background:none; border:2px solid #ddd; color:#555; font-weight:700; font-size:0.9rem; padding:14px; border-radius:4px; cursor:pointer; font-family:'Barlow',sans-serif; transition:border-color 0.2s;">Keep me posted</button>
+    </div>
+
+    <div id="modal-email-form" style="display:none; margin-top:16px;">
+      <div id="mlb2-41867525">
+        <div class="row-form">
+          <form action="https://assets.mailerlite.com/jsonp/1979797/forms/188674885215585415/subscribe" method="post" style="display:flex; flex-direction:column; gap:10px;">
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <input type="email" name="fields[email]" placeholder="your@email.com" required autocomplete="email" style="flex:1; min-width:200px; padding:12px 16px; border:2px solid #ddd; border-radius:4px; font-size:1rem; font-family:'Barlow',sans-serif; outline:none;">
+              <button type="submit" style="background:#800020; color:white; font-weight:700; padding:12px 20px; border:none; border-radius:4px; cursor:pointer; font-family:'Barlow',sans-serif; font-size:0.95rem; white-space:nowrap;">Send It</button>
+            </div>
+            <label style="display:flex; align-items:flex-start; gap:8px; text-align:left; cursor:pointer;">
+              <input type="checkbox" required style="margin-top:3px; flex-shrink:0; accent-color:#800020;">
+              <span style="font-size:0.75rem; color:#777; line-height:1.5;">I agree to receive occasional marketing emails and updates from Christen Strags and Strags Performance Training. I understand I can unsubscribe at any time.</span>
+            </label>
+            <input type="hidden" name="ml-submit" value="1">
+            <input type="hidden" name="anticsrf" value="true">
+          </form>
+          <p style="font-size:0.75rem; color:#aaa; margin-top:8px;">No spam. Just a heads-up when the next cohort opens.</p>
+        </div>
+        <div class="row-success" style="display:none;">
+          <p style="font-size:1rem; font-weight:700; color:#800020; margin:0;">You're on the list!</p>
+          <p style="font-size:0.85rem; color:#555; margin-top:6px;">We'll let you know when the next cohort opens.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 // Mobile nav toggle
 document.addEventListener('DOMContentLoaded', function() {
@@ -206,8 +246,48 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.classList.toggle('open');
     });
   }
+
+  // Announcement modal
+  var modal = document.getElementById('announce-modal');
+  var closeBtn = document.getElementById('modal-close');
+  var emailToggle = document.getElementById('modal-email-toggle');
+  var emailForm = document.getElementById('modal-email-form');
+
+  if (!localStorage.getItem('cohort3-dismissed')) {
+    var modalShown = false;
+    window.addEventListener('scroll', function() {
+      if (modalShown) return;
+      var scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (scrolled >= 0.6) {
+        modalShown = true;
+        modal.style.display = 'flex';
+      }
+    });
+  }
+
+  function dismissModal() {
+    modal.style.display = 'none';
+    localStorage.setItem('cohort3-dismissed', '1');
+  }
+
+  closeBtn.addEventListener('click', dismissModal);
+  modal.addEventListener('click', function(e) { if (e.target === modal) dismissModal(); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') dismissModal(); });
+  emailToggle.addEventListener('click', function() {
+    emailForm.style.display = 'block';
+    emailToggle.style.display = 'none';
+  });
 });
 </script>
 
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b" type="text/javascript"></script>
+<script>
+function ml_webform_success_41867525() {
+  var form = document.querySelector('#mlb2-41867525 .row-form');
+  var success = document.querySelector('#mlb2-41867525 .row-success');
+  if (form) form.style.display = 'none';
+  if (success) success.style.display = 'block';
+}
+</script>
 </body>
 </html>
