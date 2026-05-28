@@ -130,6 +130,11 @@
   </div>
 </nav>
 
+<!-- DEADLINE BANNER -->
+<div style="background:#800020; text-align:center; padding:14px 24px;">
+  <p style="color:#fff; font-size:0.95rem; font-weight:700; margin:0; letter-spacing:0.5px;">June Cohort enrollment closes <strong>Saturday, May 30 at 11:59pm CT</strong> — don't miss it.</p>
+</div>
+
 <!-- PAGE HEADER -->
 <header class="page-header" role="banner">
   <h1>Join Sports Bra Strength</h1>
@@ -138,6 +143,14 @@
 
 <!-- MAIN CONTENT -->
 <main id="main-content">
+
+<!-- TESTIMONIAL -->
+<section style="background:#fff; padding:48px 24px 36px; text-align:center; border-bottom:1px solid #eee;">
+  <div class="testimonial-card" style="max-width:640px; margin:0 auto; text-align:left;">
+    <p>"I've been going to the gym for a couple of years, but this group still held me more accountable, made me more disciplined, and helped make the gym experience a group activity in the most low impact least invasive kinda way."</p>
+    <span class="author">— Kayla W.</span>
+  </div>
+</section>
 
 <!-- PRICING TIERS -->
 <section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
@@ -224,6 +237,94 @@
   </p>
 </section>
 
+<!-- FAQ -->
+<section class="faq-section" aria-labelledby="faq-heading">
+  <h2 id="faq-heading">Questions?</h2>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="pfaq1">
+        <span>Is this for beginners?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="pfaq1">
+        <p>Best for people with some lifting experience, but if you're newer to strength training, reach out before joining. I'll tell you exactly where to start.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="pfaq2">
+        <span>How many workouts per week?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="pfaq2">
+        <p>Three workouts (30–45 minutes each) with an optional 4th. Designed for real schedules. Miss one? Just pick back up.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="pfaq3">
+        <span>Do I need a gym?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="pfaq3">
+        <p>Nope. You get both gym and dumbbell-only versions. Need at least one lighter and one heavier set of dumbbells for DB-only.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="pfaq4">
+        <span>How long until I see results?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="pfaq4">
+        <p>You'll feel stronger within 2–3 weeks. Visible changes usually appear around week 8–12.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="pfaq5">
+        <span>What if I'm not seeing results?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="pfaq5">
+        <p>If you complete 36 workouts, retest, and aren't stronger than when you started — I'll refund you. No fine print. The only requirement is that you do the work.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="pfaq6">
+        <span>Is this just for women?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="pfaq6">
+        <p>Nope. The only requirement is that you're a women's sports fan. We're an inclusive community — all are welcome here.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="pfaq7">
+        <span>What if I can't do a specific exercise?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="pfaq7">
+        <p>Message Christen directly through the app and she'll give you a modification. Every member has direct access — not a chatbot, not a generic substitution list. If something doesn't work for your body or your equipment, you'll get a real answer from your actual coach.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="pfaq8">
+        <span>Can I cancel anytime?</span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="pfaq8">
+        <p>Yes, cancel anytime. Just send us an email and we'll take care of it same day.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 </main>
 
 <!-- FOOTER -->
@@ -252,6 +353,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+function toggleFAQ(element) {
+  const answer = element.nextElementSibling;
+  const allQuestions = document.querySelectorAll('.faq-question');
+  const allAnswers = document.querySelectorAll('.faq-answer');
+  const isExpanded = element.getAttribute('aria-expanded') === 'true';
+
+  allQuestions.forEach(q => {
+    if (q !== element) { q.classList.remove('active'); q.setAttribute('aria-expanded', 'false'); }
+  });
+  allAnswers.forEach(a => { if (a !== answer) a.classList.remove('active'); });
+
+  if (isExpanded) {
+    element.classList.remove('active');
+    element.setAttribute('aria-expanded', 'false');
+    answer.classList.remove('active');
+  } else {
+    element.classList.add('active');
+    element.setAttribute('aria-expanded', 'true');
+    answer.classList.add('active');
+  }
+}
 </script>
 
 </body>
