@@ -229,7 +229,7 @@
 
   <div id="ml-stay-in-touch" style="max-width:480px; margin:0 auto;">
     <div class="row-form">
-      <form action="https://assets.mailerlite.com/jsonp/1979797/forms/188674885215585415/subscribe" method="post" style="display:flex; flex-direction:column; gap:10px;">
+      <form id="pricing-ml-form" action="https://assets.mailerlite.com/jsonp/1979797/forms/188674885215585415/subscribe" method="post" style="display:flex; flex-direction:column; gap:10px;">
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
           <input type="email" name="fields[email]" placeholder="your@email.com" required autocomplete="email" style="flex:1; min-width:200px; padding:13px 16px; border:2px solid #ddd; border-radius:4px; font-size:1rem; font-family:'Barlow',sans-serif; outline:none; background:#fff;">
           <button type="submit" id="stay-in-touch-btn" style="background:#800020; color:white; font-weight:700; padding:13px 22px; border:none; border-radius:4px; cursor:pointer; font-family:'Barlow',sans-serif; font-size:0.95rem; white-space:nowrap;">Keep Me Posted</button>
@@ -424,13 +424,23 @@ function toggleFAQ(element) {
 }
 </script>
 
-<script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b" type="text/javascript"></script>
 <script>
-function ml_webform_success_41867525() {
-  var btn = document.getElementById('stay-in-touch-btn');
-  if (btn) { btn.textContent = 'Success!'; btn.disabled = true; btn.style.background = '#555'; btn.style.cursor = 'default'; }
-  document.getElementById('stay-in-touch-success').style.display = 'block';
-}
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('pricing-ml-form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch(form.action, { method: 'POST', body: data, mode: 'no-cors' })
+        .catch(function() {})
+        .finally(function() {
+          var btn = document.getElementById('stay-in-touch-btn');
+          if (btn) { btn.textContent = 'Success!'; btn.disabled = true; btn.style.background = '#555'; btn.style.cursor = 'default'; }
+          document.getElementById('stay-in-touch-success').style.display = 'block';
+        });
+    });
+  }
+});
 </script>
 </body>
 </html>
