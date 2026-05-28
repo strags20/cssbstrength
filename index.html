@@ -194,6 +194,30 @@
   <p>© 2026 Sports Bra Strength &nbsp;·&nbsp; Strags Performance Training &nbsp;·&nbsp; San Antonio, TX &nbsp;·&nbsp; <a href="terms.html" style="color:rgba(255,255,255,0.45);text-decoration:none;">Terms of Service</a> &nbsp;·&nbsp; <a href="privacy.html" style="color:rgba(255,255,255,0.45);text-decoration:none;">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:info@christenstrags.com" style="color:rgba(255,255,255,0.45);text-decoration:none;">info@christenstrags.com</a></p>
 </div>
 
+<!-- ANNOUNCEMENT MODAL -->
+<div id="announce-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.72); z-index:1000; align-items:center; justify-content:center; padding:20px;" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+  <div style="background:white; border-radius:8px; max-width:520px; width:100%; padding:40px 36px; position:relative; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+    <button id="modal-close" aria-label="Close announcement" style="position:absolute; top:14px; right:18px; background:none; border:none; font-size:1.8rem; cursor:pointer; color:#bbb; line-height:1; font-family:'Barlow',sans-serif;">×</button>
+
+    <p style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:2.5px; color:#800020; margin-bottom:12px;">Now Open</p>
+    <h2 id="modal-headline" style="font-family:'Barlow',sans-serif; font-size:clamp(1.3rem,4vw,1.75rem); font-weight:800; color:#1a1a1a; line-height:1.25; margin-bottom:18px; text-transform:uppercase; letter-spacing:0.5px;">Cohort 3 is open — and it comes with a competition.</h2>
+    <p style="font-size:1rem; color:#555; line-height:1.75; margin-bottom:30px;">June members get access to the Commissioner's Cup, a team challenge running June 1–17 where you compete, earn points, and rep your squad. New to SBS? This is the best time to start.</p>
+
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <a href="pricing.html" class="cta-button" style="display:block; text-align:center;" onclick="localStorage.setItem('cohort3-dismissed','1');">Join Now →</a>
+      <button id="modal-email-toggle" style="background:none; border:2px solid #ddd; color:#555; font-weight:700; font-size:0.9rem; padding:14px; border-radius:4px; cursor:pointer; font-family:'Barlow',sans-serif; transition:border-color 0.2s;">Not ready yet — keep me posted</button>
+    </div>
+
+    <div id="modal-email-form" style="display:none; margin-top:16px;">
+      <form action="mailto:info@christenstrags.com?subject=Keep me posted on Sports Bra Strength" method="post" enctype="text/plain" style="display:flex; gap:8px; flex-wrap:wrap;">
+        <input type="email" name="email" placeholder="your@email.com" required style="flex:1; min-width:200px; padding:12px 16px; border:2px solid #ddd; border-radius:4px; font-size:1rem; font-family:'Barlow',sans-serif; outline:none;">
+        <button type="submit" style="background:#800020; color:white; font-weight:700; padding:12px 20px; border:none; border-radius:4px; cursor:pointer; font-family:'Barlow',sans-serif; font-size:0.95rem; white-space:nowrap;">Send It</button>
+      </form>
+      <p style="font-size:0.75rem; color:#aaa; margin-top:8px;">No spam. Just a heads-up when the next cohort opens.</p>
+    </div>
+  </div>
+</div>
+
 <script>
 // Mobile nav toggle
 document.addEventListener('DOMContentLoaded', function() {
@@ -206,6 +230,29 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.classList.toggle('open');
     });
   }
+
+  // Announcement modal
+  var modal = document.getElementById('announce-modal');
+  var closeBtn = document.getElementById('modal-close');
+  var emailToggle = document.getElementById('modal-email-toggle');
+  var emailForm = document.getElementById('modal-email-form');
+
+  if (!localStorage.getItem('cohort3-dismissed')) {
+    setTimeout(function() { modal.style.display = 'flex'; }, 900);
+  }
+
+  function dismissModal() {
+    modal.style.display = 'none';
+    localStorage.setItem('cohort3-dismissed', '1');
+  }
+
+  closeBtn.addEventListener('click', dismissModal);
+  modal.addEventListener('click', function(e) { if (e.target === modal) dismissModal(); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') dismissModal(); });
+  emailToggle.addEventListener('click', function() {
+    emailForm.style.display = 'block';
+    emailToggle.style.display = 'none';
+  });
 });
 </script>
 
