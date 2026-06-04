@@ -1570,6 +1570,7 @@ h2 {
   .cta-button { font-size: 0.95rem; padding: 16px 35px; }
   .hero-stats { font-size: 0.75rem; gap: 8px; flex-wrap: nowrap; }
   .hero-image { max-width: 100%; order: 2; }
+  .hero-text-col { padding-left: 0 !important; }
 
   /* Page header mobile */
   .page-header { padding: 50px 20px 40px; }
