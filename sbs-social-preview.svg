@@ -8,13 +8,10 @@
   <!-- Bottom red accent bar -->
   <rect y="620" width="1200" height="10" fill="#E8000D"/>
 
-  <!-- Left vertical accent -->
-  <rect x="80" y="120" width="6" height="390" fill="#E8000D"/>
-
   <!-- SBS wordmark -->
   <text
-    x="620"
-    y="340"
+    x="600"
+    y="320"
     font-family="Impact, 'Arial Narrow', Arial, sans-serif"
     font-size="260"
     fill="#ffffff"
@@ -24,19 +21,19 @@
 
   <!-- Full name below -->
   <text
-    x="620"
-    y="460"
+    x="600"
+    y="455"
     font-family="Impact, 'Arial Narrow', Arial, sans-serif"
     font-size="34"
-    fill="rgba(255,255,255,0.55)"
+    fill="#ffffff"
     text-anchor="middle"
     dominant-baseline="middle"
     letter-spacing="10">SPORTS BRA STRENGTH</text>
 
   <!-- Tagline -->
   <text
-    x="620"
-    y="510"
+    x="600"
+    y="505"
     font-family="Impact, 'Arial Narrow', Arial, sans-serif"
     font-size="18"
     fill="#E8000D"
