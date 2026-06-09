@@ -263,7 +263,7 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
     text-align: left;
     align-items: start;
   }
-  .hero-img-col .hero-image { max-width: 100%; }
+  .hero-img-col .hero-image { max-width: 100%; max-height: none; }
   .hero-ctas { justify-content: flex-start; }
   .hero-stats { justify-content: flex-start; }
 }
