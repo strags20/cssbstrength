@@ -2,42 +2,36 @@
   <!-- Background -->
   <rect width="1200" height="630" fill="#0a0a0a"/>
 
-  <!-- Top red accent bar -->
-  <rect width="1200" height="10" fill="#E8000D"/>
-
-  <!-- Bottom red accent bar -->
-  <rect y="620" width="1200" height="10" fill="#E8000D"/>
-
-  <!-- SBS wordmark -->
+  <!-- SPORTS BRA -->
   <text
     x="600"
-    y="320"
-    font-family="Impact, 'Arial Narrow', Arial, sans-serif"
-    font-size="260"
+    y="218"
+    font-family="Impact, 'Arial Black', Arial, sans-serif"
+    font-size="195"
     fill="#ffffff"
     text-anchor="middle"
     dominant-baseline="middle"
-    letter-spacing="24">SBS</text>
+    letter-spacing="-2">SPORTS BRA</text>
 
-  <!-- Full name below -->
+  <!-- STRENGTH -->
   <text
     x="600"
-    y="455"
-    font-family="Impact, 'Arial Narrow', Arial, sans-serif"
-    font-size="34"
-    fill="#E8000D"
+    y="418"
+    font-family="Impact, 'Arial Black', Arial, sans-serif"
+    font-size="195"
+    fill="#ffffff"
     text-anchor="middle"
     dominant-baseline="middle"
-    letter-spacing="10">SPORTS BRA STRENGTH</text>
+    letter-spacing="-2">STRENGTH</text>
 
   <!-- Tagline -->
   <text
     x="600"
-    y="505"
-    font-family="Impact, 'Arial Narrow', Arial, sans-serif"
-    font-size="18"
+    y="575"
+    font-family="Impact, 'Arial Black', Arial, sans-serif"
+    font-size="22"
     fill="#ffffff"
     text-anchor="middle"
     dominant-baseline="middle"
-    letter-spacing="5">THE LIFTING CLUB FOR WOMEN'S SPORTS FANS</text>
+    letter-spacing="5">THE ONLY LIFTING CLUB FOR WOMEN'S SPORTS FANS</text>
 </svg>
