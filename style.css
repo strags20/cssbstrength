@@ -316,12 +316,12 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    TEST / RETEST SECTION
    ============================================= */
 .test-retest-section {
-  background: #0a0a0a;
+  background: #f5f5f5;
   padding: 70px 20px;
-  color: white;
+  color: #0a0a0a;
 }
-.test-retest-section h2 { color: #ffffff; margin-bottom: 30px; }
-.test-retest-section .methodology-text { color: #ddd; }
+.test-retest-section h2 { color: #0a0a0a; margin-bottom: 30px; }
+.test-retest-section .methodology-text { color: #333; }
 .test-retest-content {
   max-width: 900px;
   margin: 0 auto;
@@ -619,6 +619,15 @@ h2 {
 }
 .mini-cred-text strong { color: #E8000D; }
 .mini-credibility .text-link { color: #E8000D; }
+
+/* Problem section light variant */
+.problem-section--light {
+  background: #f5f5f5;
+  color: #0a0a0a;
+}
+.problem-section--light h2 { color: #0a0a0a; }
+.problem-section--light p { color: #333; }
+.problem-section--light .big { color: #E8000D; }
 
 /* =============================================
    COMMUNITY TEASER (Home page)
@@ -1206,7 +1215,7 @@ h2 {
    FOOTER CTA
    ============================================= */
 .footer-cta {
-  background: #0a0a0a;
+  background: #E8000D;
   color: white;
   text-align: center;
   padding: 70px 20px;
@@ -1217,7 +1226,15 @@ h2 {
   font-size: 1.4rem;
   font-weight: 700;
   margin-top: 20px;
-  color: #E8000D;
+  color: #fff;
+}
+.footer-cta .cta-button {
+  background: #0a0a0a;
+  color: #fff;
+}
+.footer-cta .cta-button:hover {
+  background: #fff;
+  color: #0a0a0a;
 }
 .cta-group {
   display: flex;
@@ -1517,20 +1534,20 @@ h2 {
 .test-retest-section--dark .methodology-text { color: #ddd; }
 
 /* =============================================
-   WORKOUT HISTORY SECTION (dark bg, image L / text R)
+   WORKOUT HISTORY SECTION (light bg, image L / text R)
    ============================================= */
 .workout-history-section {
-  background: #141414;
+  background: #f5f5f5;
   padding: 70px 20px;
-  color: white;
+  color: #0a0a0a;
   text-align: center;
 }
-.workout-history-section h2 { color: #ffffff; margin-bottom: 40px; }
+.workout-history-section h2 { color: #0a0a0a; margin-bottom: 40px; }
 .workout-history-section .credibility-content {
   max-width: 1100px;
   margin: 0 auto;
 }
-.workout-history-section .credibility-text { color: #ddd; }
+.workout-history-section .credibility-text { color: #333; }
 
 /* =============================================
    GRAPH SECTION (different bg, text L / image R)
