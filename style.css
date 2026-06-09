@@ -213,7 +213,7 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
 .hero {
   background: #0a0a0a;
   color: white;
-  padding: 40px 20px 50px;
+  padding: 24px 20px 32px;
 }
 .hero-inner {
   display: grid;
@@ -221,7 +221,7 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  gap: 24px;
+  gap: 16px;
 }
 .hero-text-col { grid-area: title; }
 .hero-img-col { grid-area: image; }
@@ -229,15 +229,19 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
 .hero-img-col .hero-image {
   width: 100%;
   max-width: 480px;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: top;
   margin: 0 auto;
   display: block;
+  border-radius: 8px;
 }
 .hero-ctas {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .cta-ghost {
   background: transparent;
@@ -266,15 +270,15 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
 }
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-size: clamp(2.2rem, 6vw, 5rem);
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   line-height: 0.95;
   letter-spacing: 3px;
 }
 .hero-subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
   line-height: 1.6;
   font-weight: 600;
   max-width: 800px;
