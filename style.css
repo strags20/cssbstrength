@@ -2,7 +2,7 @@
    SPORTS BRA STRENGTH — Shared Stylesheet
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Barlow:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
 
 /* Base Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -82,12 +82,11 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   gap: 3px;
 }
 .nav-logo-sbs {
-  font-size: 26px;
+  font-size: 32px;
   color: #fff;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+  letter-spacing: 0;
   line-height: 1;
-  font-family: Impact, 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 .nav-logo-full {
   font-size: 7.5px;
@@ -275,6 +274,14 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   margin-bottom: 0;
   line-height: 0.95;
   letter-spacing: 3px;
+}
+.hero-byline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  text-transform: uppercase;
 }
 .hero-subtitle {
   font-size: 1.1rem;
