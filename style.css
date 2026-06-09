@@ -269,15 +269,15 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    PROOF SECTION
    ============================================= */
 .proof-section {
-  background: #fff;
-  color: #0a0a0a;
+  background: #0a0a0a;
+  color: white;
   padding: 70px 20px;
   text-align: center;
 }
-.proof-section h2 { color: #0a0a0a; margin-bottom: 20px; }
+.proof-section h2 { color: #ffffff; margin-bottom: 20px; }
 .proof-lead {
   font-size: 1.1rem;
-  color: #666;
+  color: #aaa;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -286,7 +286,7 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   font-size: 1.3rem;
   font-style: italic;
   line-height: 1.8;
-  color: #333;
+  color: #ddd;
   max-width: 820px;
   margin: 0 auto 30px;
   border-left: 4px solid #E8000D;
@@ -316,7 +316,7 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    TEST / RETEST SECTION
    ============================================= */
 .test-retest-section {
-  background: #fff;
+  background: #f5f5f5;
   padding: 70px 20px;
   color: #0a0a0a;
 }
@@ -396,15 +396,15 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    GUARANTEE SECTION
    ============================================= */
 .guarantee-section {
-  background: #fff;
-  color: #0a0a0a;
+  background: #0a0a0a;
+  color: white;
   padding: 70px 20px;
   text-align: center;
 }
-.guarantee-section h2 { color: #0a0a0a; margin-bottom: 30px; }
+.guarantee-section h2 { color: white; margin-bottom: 30px; }
 .guarantee-box {
-  background: #f5f5f5;
-  border: 2px solid #ddd;
+  background: rgba(255,255,255,0.12);
+  border: 2px solid rgba(255,255,255,0.3);
   border-radius: 8px;
   padding: 40px;
   max-width: 700px;
@@ -413,7 +413,6 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
 .guarantee-box p {
   font-size: 1.35rem;
   line-height: 1.8;
-  color: #333;
   margin-bottom: 15px;
 }
 .guarantee-box p:last-child { margin-bottom: 0; }
@@ -422,14 +421,14 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    APP SCREENSHOTS
    ============================================= */
 .app-screenshots-section {
-  background: #fff;
+  background: #141414;
   padding: 70px 20px;
-  color: #0a0a0a;
+  color: white;
 }
-.app-screenshots-section h2 { color: #0a0a0a; margin-bottom: 15px; }
+.app-screenshots-section h2 { color: white; margin-bottom: 15px; }
 .app-screenshots-section .subtitle {
   text-align: center;
-  color: #666;
+  color: #ccc;
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto 40px;
@@ -457,7 +456,7 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    EMAIL CAPTURE
    ============================================= */
 .email-capture-section {
-  background: #fff;
+  background: #f5f5f5;
   padding: 70px 20px;
   text-align: center;
 }
@@ -514,12 +513,12 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    COMMUNITY POSTS SECTION (sneakers + sports talk)
    ============================================= */
 .community-posts-section {
-  background: #fff;
+  background: #141414;
   padding: 70px 20px 120px;
   text-align: center;
 }
-.community-posts-section h2 { color: #0a0a0a; margin-bottom: 10px; }
-.community-posts-section .subtitle { color: #666; }
+.community-posts-section h2 { color: white; margin-bottom: 10px; }
+.community-posts-section .subtitle { color: rgba(255,255,255,0.85); }
 .chat-mosaic {
   columns: 4;
   column-gap: 12px;
@@ -533,7 +532,7 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   border-radius: 8px;
   overflow: hidden;
   background: #f5f5f5;
-  border: 2px solid #eee;
+  border: 2px solid rgba(255,255,255,0.25);
 }
 .chat-mosaic figure img {
   width: 100%;
@@ -652,40 +651,47 @@ h2 {
    ============================================= */
 .problem-section {
   padding: 70px 20px;
-  background: #fff;
-  color: #0a0a0a;
+  background: #0a0a0a;
+  color: white;
   text-align: center;
 }
 .problem-section h2 {
   font-size: 2.3rem;
   margin-bottom: 25px;
   font-weight: 800;
-  color: #0a0a0a;
+  color: white;
 }
 .problem-section p {
   font-size: 1.25rem;
   line-height: 1.8;
   max-width: 850px;
   margin: 0 auto 20px;
-  color: #555;
+  color: #ddd;
 }
 .problem-section .big {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0a0a0a;
+  color: #E8000D;
   margin: 30px auto;
 }
+.problem-section--light {
+  background: #f5f5f5;
+  color: #0a0a0a;
+}
+.problem-section--light h2 { color: #0a0a0a; }
+.problem-section--light p { color: #333; }
+.problem-section--light .big { color: #E8000D; }
 
 /* =============================================
    FULL CREDIBILITY / ABOUT SECTION
    ============================================= */
 .credibility {
-  background: #fff;
-  color: #0a0a0a;
+  background: #0a0a0a;
+  color: white;
   padding: 70px 20px;
   text-align: center;
 }
-.credibility h2 { color: #0a0a0a; margin-bottom: 40px; }
+.credibility h2 { color: #ffffff; margin-bottom: 40px; }
 .credibility-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -704,7 +710,6 @@ h2 {
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 20px;
-  color: #444;
 }
 .credibility-text strong { color: #E8000D; font-weight: 700; }
 
@@ -712,7 +717,7 @@ h2 {
    CAREER HIGHLIGHT STATS (About page)
    ============================================= */
 .career-highlights {
-  background: #fff;
+  background: #f5f5f5;
   padding: 70px 20px;
 }
 .career-highlights h2 { color: #0a0a0a; margin-bottom: 50px; }
@@ -781,18 +786,17 @@ h2 {
 
 /* Mission statement */
 .mission-section {
-  background: #fff;
-  color: #0a0a0a;
+  background: #0a0a0a;
+  color: white;
   padding: 70px 20px;
   text-align: center;
 }
-.mission-section h2 { color: #0a0a0a; margin-bottom: 25px; }
+.mission-section h2 { color: #ffffff; margin-bottom: 25px; }
 .mission-text {
   font-size: 1.35rem;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto 20px;
-  color: #555;
 }
 
 /* =============================================
@@ -837,12 +841,12 @@ h2 {
 /* =============================================
    INSIDE SBS
    ============================================= */
-.inside-sbs { background: #fff; padding: 60px 20px; color: #0a0a0a; }
-.inside-sbs h2 { color: #0a0a0a; margin-bottom: 15px; }
+.inside-sbs { background: #0a0a0a; padding: 60px 20px; color: white; }
+.inside-sbs h2 { color: #ffffff; margin-bottom: 15px; }
 .inside-sbs .subtitle {
   text-align: center;
   font-size: 1.15rem;
-  color: #666;
+  color: #ccc;
   max-width: 700px;
   margin: 0 auto 30px;
 }
@@ -894,7 +898,7 @@ h2 {
 /* =============================================
    PRICING
    ============================================= */
-.pricing-section { background: #fff; padding: 60px 20px; }
+.pricing-section { background: #f5f5f5; padding: 60px 20px; }
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1138,12 +1142,12 @@ h2 {
    MEMBER INTROS SECTION
    ============================================= */
 .member-intros-section {
-  background: #fff;
+  background: #0a0a0a;
   padding: 70px 20px;
   text-align: center;
-  color: #0a0a0a;
+  color: white;
 }
-.member-intros-section h2 { color: #0a0a0a; margin-bottom: 40px; }
+.member-intros-section h2 { color: #ffffff; margin-bottom: 40px; }
 .intros-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1155,8 +1159,8 @@ h2 {
 .intro-photo-card {
   border-radius: 8px;
   overflow: hidden;
-  background: #f5f5f5;
-  border: 2px solid #eee;
+  background: #141414;
+  border: 2px solid rgba(255,255,255,0.15);
 }
 .intro-photo-card figcaption {
   padding: 10px 12px;
@@ -1176,7 +1180,7 @@ h2 {
 /* =============================================
    MEMBER PHOTOS
    ============================================= */
-.whos-training { background: #fff; padding: 60px 20px; }
+.whos-training { background: #f5f5f5; padding: 60px 20px; }
 .whos-training h2 { margin-bottom: 15px; color: #0a0a0a; }
 .whos-training .subtitle {
   text-align: center;
@@ -1522,16 +1526,16 @@ h2 {
 .training-split-section .methodology-text { color: #555; }
 
 .test-retest-section--dark {
-  background: #fff;
+  background: #0a0a0a;
 }
-.test-retest-section--dark h2 { color: #0a0a0a; }
-.test-retest-section--dark .methodology-text { color: #555; }
+.test-retest-section--dark h2 { color: #ffffff; }
+.test-retest-section--dark .methodology-text { color: #ddd; }
 
 /* =============================================
    WORKOUT HISTORY SECTION (light bg, image L / text R)
    ============================================= */
 .workout-history-section {
-  background: #fff;
+  background: #f5f5f5;
   padding: 70px 20px;
   color: #0a0a0a;
   text-align: center;
@@ -1547,7 +1551,7 @@ h2 {
    GRAPH SECTION (different bg, text L / image R)
    ============================================= */
 .graph-section {
-  background: #fff;
+  background: #f0f4f8;
   padding: 70px 20px;
   color: #0a0a0a;
   text-align: center;
