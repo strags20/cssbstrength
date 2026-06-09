@@ -213,8 +213,56 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
 .hero {
   background: #0a0a0a;
   color: white;
+  padding: 40px 20px 50px;
+}
+.hero-inner {
+  display: grid;
+  grid-template-areas: "title" "image" "copy";
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  padding: 80px 20px 60px;
+  gap: 24px;
+}
+.hero-text-col { grid-area: title; }
+.hero-img-col { grid-area: image; }
+.hero-copy-col { grid-area: copy; }
+.hero-img-col .hero-image {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: block;
+}
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.cta-ghost {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.6);
+  color: #fff;
+}
+.cta-ghost:hover {
+  background: #fff;
+  color: #0a0a0a;
+}
+@media (min-width: 769px) {
+  .hero { padding: 60px 40px; }
+  .hero-inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "title image"
+      "copy  image";
+    gap: 16px 56px;
+    text-align: left;
+    align-items: start;
+  }
+  .hero-img-col .hero-image { max-width: 100%; }
+  .hero-ctas { justify-content: flex-start; }
+  .hero-stats { justify-content: flex-start; }
 }
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
@@ -1599,13 +1647,10 @@ h2 {
   .nav-links li a.nav-cta { margin-top: 8px; text-align: center; }
 
   /* Hero mobile */
-  .hero { padding: 40px 20px 50px; }
   .hero-title { font-size: 2rem; line-height: 1.2; }
   .hero-subtitle { font-size: 1.1rem; }
   .cta-button { font-size: 0.95rem; padding: 16px 35px; }
   .hero-stats { font-size: 0.75rem; gap: 8px; flex-wrap: nowrap; }
-  .hero-image { max-width: 100%; order: 2; }
-  .hero-text-col { padding-left: 0 !important; }
 
   /* Page header mobile */
   .page-header { padding: 50px 20px 40px; }
