@@ -620,15 +620,6 @@ h2 {
 .mini-cred-text strong { color: #E8000D; }
 .mini-credibility .text-link { color: #E8000D; }
 
-/* Problem section light variant */
-.problem-section--light {
-  background: #f5f5f5;
-  color: #0a0a0a;
-}
-.problem-section--light h2 { color: #0a0a0a; }
-.problem-section--light p { color: #333; }
-.problem-section--light .big { color: #E8000D; }
-
 /* =============================================
    COMMUNITY TEASER (Home page)
    ============================================= */
@@ -683,6 +674,13 @@ h2 {
   color: #E8000D;
   margin: 30px auto;
 }
+.problem-section--light {
+  background: #f5f5f5;
+  color: #0a0a0a;
+}
+.problem-section--light h2 { color: #0a0a0a; }
+.problem-section--light p { color: #333; }
+.problem-section--light .big { color: #E8000D; }
 
 /* =============================================
    FULL CREDIBILITY / ABOUT SECTION
