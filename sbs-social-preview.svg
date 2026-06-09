@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+
+  <!-- Top red accent bar -->
+  <rect width="1200" height="10" fill="#E8000D"/>
+
+  <!-- Bottom red accent bar -->
+  <rect y="620" width="1200" height="10" fill="#E8000D"/>
+
+  <!-- Left vertical accent -->
+  <rect x="80" y="120" width="6" height="390" fill="#E8000D"/>
+
+  <!-- SBS wordmark -->
+  <text
+    x="620"
+    y="340"
+    font-family="Impact, 'Arial Narrow', Arial, sans-serif"
+    font-size="260"
+    fill="#ffffff"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="24">SBS</text>
+
+  <!-- Full name below -->
+  <text
+    x="620"
+    y="460"
+    font-family="Impact, 'Arial Narrow', Arial, sans-serif"
+    font-size="34"
+    fill="rgba(255,255,255,0.55)"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="10">SPORTS BRA STRENGTH</text>
+
+  <!-- Tagline -->
+  <text
+    x="620"
+    y="510"
+    font-family="Impact, 'Arial Narrow', Arial, sans-serif"
+    font-size="18"
+    fill="#E8000D"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="5">THE LIFTING CLUB FOR WOMEN'S SPORTS FANS</text>
+</svg>

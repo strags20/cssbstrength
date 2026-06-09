@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <!-- Background -->
+  <rect width="400" height="120" fill="#0a0a0a"/>
+
+  <!-- Left red accent bar -->
+  <rect x="0" y="0" width="6" height="120" fill="#E8000D"/>
+
+  <!-- SBS -->
+  <text
+    x="200"
+    y="58"
+    font-family="Impact, 'Arial Narrow', Arial, sans-serif"
+    font-size="68"
+    fill="#ffffff"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="14">SBS</text>
+
+  <!-- Full name -->
+  <text
+    x="200"
+    y="95"
+    font-family="Impact, 'Arial Narrow', Arial, sans-serif"
+    font-size="13"
+    fill="rgba(255,255,255,0.6)"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="4.5">SPORTS BRA STRENGTH</text>
+</svg>
