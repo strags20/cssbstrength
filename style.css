@@ -276,6 +276,14 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   line-height: 0.95;
   letter-spacing: 3px;
 }
+.hero-byline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
 .hero-subtitle {
   font-size: 1.1rem;
   margin-bottom: 16px;
