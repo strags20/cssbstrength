@@ -1658,9 +1658,15 @@ h2 {
   .nav-links li a.nav-cta { margin-top: 8px; text-align: center; }
 
   /* Hero mobile */
-  .hero-title { font-size: 2rem; line-height: 1.2; }
-  .hero-subtitle { font-size: 1.1rem; }
-  .cta-button { font-size: 0.95rem; padding: 16px 35px; }
+  .hero { padding: 16px 20px 20px; }
+  .hero-inner { gap: 8px; }
+  .hero-title { font-size: 2rem; line-height: 1.15; }
+  .hero-byline { font-size: 0.85rem; margin-top: 4px; }
+  .hero-img-col .hero-image { max-height: 190px; }
+  .hero-subtitle { font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px; }
+  .hero-ctas { gap: 6px; margin-bottom: 8px; }
+  .cta-button { font-size: 0.9rem; padding: 13px 28px; }
+  .hero-trust { margin-top: 8px; font-size: 0.85rem; }
   .hero-stats { font-size: 0.75rem; gap: 8px; flex-wrap: nowrap; }
 
   /* Page header mobile */
