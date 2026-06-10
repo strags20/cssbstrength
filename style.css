@@ -2,7 +2,7 @@
    SPORTS BRA STRENGTH — Shared Stylesheet
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Barlow:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
 
 /* Base Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -82,11 +82,11 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   gap: 3px;
 }
 .nav-logo-sbs {
-  font-size: 32px;
+  font-size: 26px;
   color: #fff;
-  letter-spacing: 0;
+  letter-spacing: 4px;
   line-height: 1;
-  font-family: 'Pacifico', cursive;
+  text-transform: uppercase;
 }
 .nav-logo-full {
   font-size: 7.5px;
@@ -263,7 +263,7 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
     text-align: left;
     align-items: start;
   }
-  .hero-img-col .hero-image { max-width: 100%; }
+  .hero-img-col .hero-image { max-width: 100%; max-height: none; }
   .hero-ctas { justify-content: flex-start; }
   .hero-stats { justify-content: flex-start; }
 }
