@@ -111,7 +111,7 @@
         <a href="pricing.html" class="cta-button" aria-label="Join Sports Bra Strength — see membership options">Join the Club →</a>
         <a href="about.html" class="cta-button cta-ghost" aria-label="See how Sports Bra Strength works">See How It Works</a>
       </div>
-      <p class="hero-trust">50+ members and growing. Beginners welcome.</p>
+      <p class="hero-trust">90+ members and counting. Beginners welcome.</p>
     </div>
   </div>
 </header>
@@ -233,8 +233,8 @@
     <button id="modal-close" aria-label="Close announcement" style="position:absolute; top:14px; right:18px; background:none; border:none; font-size:1.8rem; cursor:pointer; color:#bbb; line-height:1; font-family:'Barlow',sans-serif;">×</button>
 
     <p style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:2.5px; color:#E8000D; margin-bottom:12px;">By Popular Demand</p>
-    <h2 id="modal-headline" style="font-family:'Barlow',sans-serif; font-size:clamp(1.3rem,4vw,1.75rem); font-weight:800; color:#1a1a1a; line-height:1.25; margin-bottom:18px; text-transform:uppercase; letter-spacing:0.5px;">July Cohort Sold Out. We Added Another — July 13th.</h2>
-    <p style="font-size:1rem; color:#555; line-height:1.75; margin-bottom:30px;">Our last cohort filled up faster than we expected. Enrollment for the July 13th cohort is open now, but spots are limited again.</p>
+    <h2 id="modal-headline" style="font-family:'Barlow',sans-serif; font-size:clamp(1.3rem,4vw,1.75rem); font-weight:800; color:#1a1a1a; line-height:1.25; margin-bottom:18px; text-transform:uppercase; letter-spacing:0.5px;">July Cohort Sold Out. We Added Another — July 20th.</h2>
+    <p style="font-size:1rem; color:#555; line-height:1.75; margin-bottom:30px;">Our last cohort filled up faster than we expected. Enrollment for the July 20th cohort is open now, but spots are limited again.</p>
 
     <div style="display:flex; flex-direction:column; gap:12px;">
       <a href="pricing.html" class="cta-button" style="display:block; text-align:center;">Claim Your Spot →</a>
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var emailToggle = document.getElementById('modal-email-toggle');
   var emailForm = document.getElementById('modal-email-form');
 
-  if (!localStorage.getItem('july13-cohort-dismissed')) {
+  if (!localStorage.getItem('july20-cohort-dismissed')) {
     var modalShown = false;
     window.addEventListener('scroll', function() {
       if (modalShown) return;
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function dismissModal() {
     modal.style.display = 'none';
-    localStorage.setItem('july13-cohort-dismissed', '1');
+    localStorage.setItem('july20-cohort-dismissed', '1');
   }
 
   closeBtn.addEventListener('click', dismissModal);
