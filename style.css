@@ -210,36 +210,36 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
    HERO (Home page)
    ============================================= */
 .hero {
+  position: relative;
   background: #0a0a0a;
   color: white;
-  padding: 24px 20px 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.hero-inner {
-  display: grid;
-  grid-template-areas: "title" "image" "copy";
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  gap: 16px;
-}
-.hero-text-col { grid-area: title; }
-.hero-img-col { grid-area: image; }
-.hero-copy-col { grid-area: copy; }
-.hero-img-col .hero-image {
-  width: 100%;
-  max-width: 480px;
-  max-height: 220px;
-  object-fit: cover;
-  object-position: top;
-  margin: 0 auto;
+.hero-bg-image {
+  position: static;
   display: block;
-  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  max-height: 55vh;
+  object-fit: contain;
+  background: #111;
+}
+.hero-scrim { display: none; }
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  padding: 24px 20px 32px;
 }
 .hero-ctas {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 16px;
 }
 .cta-ghost {
@@ -252,24 +252,33 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   color: #0a0a0a;
 }
 @media (min-width: 769px) {
-  .hero { padding: 60px 40px; }
-  .hero-inner {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "title image"
-      "copy  image";
-    gap: 16px 56px;
-    text-align: left;
-    align-items: start;
+  .hero { flex-direction: row; align-items: stretch; min-height: 480px; }
+  .hero-bg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    max-height: none;
+    width: 44%;
+    object-fit: cover;
+    object-position: center 14%;
   }
-  .hero-img-col .hero-image { max-width: 100%; max-height: none; }
-  .hero-ctas { justify-content: flex-start; }
-  .hero-stats { justify-content: flex-start; }
+  .hero-scrim {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 44%, rgba(0,0,0,0.6) 56%, rgba(0,0,0,0.1) 72%);
+  }
+  .hero-inner {
+    max-width: 620px;
+    padding: 0 40px;
+    margin: auto 0;
+  }
 }
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2.2rem, 6vw, 5rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
   font-weight: 400;
   margin-bottom: 0;
   line-height: 0.95;
@@ -285,12 +294,11 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
 }
 .hero-subtitle {
   font-size: 1.1rem;
+  margin-top: 16px;
   margin-bottom: 16px;
   line-height: 1.6;
   font-weight: 600;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .cta-button {
   display: inline-block;
@@ -1658,12 +1666,9 @@ h2 {
   .nav-links li a.nav-cta { margin-top: 8px; text-align: center; }
 
   /* Hero mobile */
-  .hero { padding: 16px 20px 20px; min-height: 100svh; }
-  .hero-inner { gap: 8px; }
   .hero-title { font-size: 2rem; line-height: 1.15; }
   .hero-byline { font-size: 0.85rem; margin-top: 4px; }
-  .hero-img-col .hero-image { max-height: 190px; }
-  .hero-subtitle { font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px; }
+  .hero-subtitle { font-size: 0.95rem; line-height: 1.5; margin-top: 10px; margin-bottom: 10px; }
   .hero-ctas { gap: 6px; margin-bottom: 8px; }
   .cta-button { font-size: 0.9rem; padding: 13px 28px; }
   .hero-trust { margin-top: 8px; font-size: 0.85rem; }
