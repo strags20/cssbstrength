@@ -213,32 +213,27 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   position: relative;
   background: #0a0a0a;
   color: white;
-  padding: 48px 20px;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
-  min-height: 480px;
+  flex-direction: column;
 }
 .hero-bg-image {
-  position: absolute;
-  inset: 0;
+  position: static;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 70% center;
+  height: auto;
+  max-height: 55vh;
+  object-fit: contain;
+  background: #111;
 }
-.hero-scrim {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.85) 10%, rgba(0,0,0,0.35) 65%, rgba(0,0,0,0.15) 100%);
-}
+.hero-scrim { display: none; }
 .hero-inner {
   position: relative;
   z-index: 1;
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
   text-align: left;
+  padding: 24px 20px 32px;
 }
 .hero-ctas {
   display: flex;
@@ -257,12 +252,29 @@ a:focus, button:focus, .faq-question:focus, .buy-button:focus {
   color: #0a0a0a;
 }
 @media (min-width: 769px) {
-  .hero { padding: 0 40px; min-height: 640px; align-items: center; }
-  .hero-scrim {
-    background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.1) 70%);
+  .hero { flex-direction: row; align-items: stretch; min-height: 480px; }
+  .hero-bg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    max-height: none;
+    width: 44%;
+    object-fit: cover;
+    object-position: center 14%;
   }
-  .hero-bg-image { object-position: 75% center; }
-  .hero-inner { max-width: 560px; }
+  .hero-scrim {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 44%, rgba(0,0,0,0.6) 56%, rgba(0,0,0,0.1) 72%);
+  }
+  .hero-inner {
+    max-width: 620px;
+    padding: 0 40px;
+    margin: auto 0;
+  }
 }
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
@@ -1654,8 +1666,6 @@ h2 {
   .nav-links li a.nav-cta { margin-top: 8px; text-align: center; }
 
   /* Hero mobile */
-  .hero { padding: 24px 20px; min-height: 100svh; }
-  .hero-bg-image { object-position: 65% top; }
   .hero-title { font-size: 2rem; line-height: 1.15; }
   .hero-byline { font-size: 0.85rem; margin-top: 4px; }
   .hero-subtitle { font-size: 0.95rem; line-height: 1.5; margin-top: 10px; margin-bottom: 10px; }
